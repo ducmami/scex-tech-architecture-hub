@@ -1,0 +1,71 @@
+flowchart LR
+    subgraph ACTOR[Người dùng nội bộ]
+        U_MAKER[Admin vận hành<br/>Maker]
+        U_CHECKER[Compliance Manager<br/>Checker]
+        U_SENIOR[Admin cấp cao<br/>Checker nâng cao]
+        U_AUDIT[Audit<br/>Chỉ xem]
+    end
+
+    subgraph INHOUSE[INHOUSE]
+        INHOUSE_KC[Keycloak<br/>4 role CM]:::modified
+        subgraph INHOUSE_PORTAL["PORTAL (BFF)"]
+            INHOUSE_PORTAL_CM[Portal CM]:::new
+        end
+        subgraph INHOUSE_CM[Case Management]
+            INHOUSE_CM_BACKEND[cm-backend<br/>API]:::new
+        end
+        subgraph INHOUSE_RELATIONSHIP[Relationship]
+            INHOUSE_RELATIONSHIP_ACCOUNT[SCEX Account]:::reused
+        end
+        subgraph INHOUSE_DB[Database]
+            INHOUSE_DB_PG[(PostgreSQL<br/>schema case_mgmt)]:::modified
+        end
+    end
+
+    subgraph SCEX_CORE[SCEX Core]
+        subgraph SCEX_CORE_BE[BE Service]
+            SCEX_CORE_BE_CORE[dax-core<br/>k8s: backend]:::modified
+        end
+        subgraph SCEX_CORE_KYC[KYC Service]
+            SCEX_CORE_KYC_BACKEND[backend]:::reused
+        end
+        subgraph SCEX_CORE_DB[DB Core]
+            SCEX_CORE_DB_BE[(PostgreSQL<br/>schema be)]:::reused
+        end
+    end
+
+    subgraph AWS[DATA - AWS Cloud]
+        AWS_GLUE[Glue<br/>TM Rule Jobs]:::modified
+        subgraph AWS_DW[Data warehouse]
+            AWS_DW_RDS[RDS]:::reused
+            AWS_DW_S3[S3]:::reused
+            AWS_DW_RS[Redshift]:::reused
+        end
+        AWS_BI_QS[Quick Sight]:::reused
+    end
+
+    U_MAKER & U_CHECKER & U_SENIOR & U_AUDIT --> INHOUSE_PORTAL_CM
+    INHOUSE_PORTAL_CM -.->|OIDC login| INHOUSE_KC
+    INHOUSE_PORTAL_CM -->|REST + access token| INHOUSE_CM_BACKEND
+    %% INHOUSE_CM_BACKEND -.->|Verify JWT| INHOUSE_KC
+
+    AWS_GLUE -->|1. Tạo/gộp case, ghi alert,<br/>giao dịch, snapshot user| INHOUSE_DB_PG
+    AWS_GLUE -.->|Đọc tham số rule, watchlist<br/>+ case đang mở| INHOUSE_DB_PG
+    INHOUSE_CM_BACKEND -->|2. Vòng đời case, đề xuất, audit, SLA| INHOUSE_DB_PG
+
+    INHOUSE_CM_BACKEND -->|3. Khóa/mở khóa<br/>+ trạng thái TK realtime| SCEX_CORE_BE_CORE
+    INHOUSE_CM_BACKEND -.-> INHOUSE_RELATIONSHIP_ACCOUNT -.->|KYC tươi<br/>kênh dự phòng| SCEX_CORE_KYC_BACKEND
+
+    INHOUSE_DB_PG -->|PostgreSQL Replica<br/>Sync| AWS_DW_RDS
+    SCEX_CORE_DB_BE -->|Sync| AWS_DW_RDS
+    AWS_GLUE --> AWS_DW_S3
+    AWS_GLUE --> AWS_DW_RS
+    AWS_BI_QS --> AWS_DW
+
+    classDef new fill:#ffe8e8,stroke:#ff0000,stroke-width:3px,color:#f24e4e
+    classDef modified fill:#FFF8E1,stroke:#F9A825,stroke-width:3px,color:#F57F17
+    classDef reused fill:#F5F5F5,stroke:#616161,stroke-width:1px,color:#212121
+    classDef external fill:#FFEBEE,stroke:#C62828,stroke-width:2px,stroke-dasharray:5 5,color:#B71C1C
+    style INHOUSE fill:#F1F8E9,stroke:#9E9E9E
+    style SCEX_CORE fill:#EDE7F6,stroke:#9E9E9E
+    style AWS fill:#E0F7FA,stroke:#9E9E9E

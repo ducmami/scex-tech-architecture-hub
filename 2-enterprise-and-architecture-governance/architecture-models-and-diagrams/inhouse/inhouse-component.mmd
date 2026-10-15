@@ -1,0 +1,62 @@
+flowchart LR
+    subgraph INHOUSE[INHOUSE]
+        subgraph INHOUSE_PORTAL["PORTAL (BFF)"]
+            INHOUSE_PORTAL_CM[Portal CM]
+            INHOUSE_PORTAL_REC[Portal Reconcile]
+            INHOUSE_PORTAL_REL[Portal Relationship]
+            INHOUSE_PORTAL_BASE[Portal Base Service]
+            INHOUSE_PORTAL_TEMPLATE_ENGINE[Portal Template Engine]
+            INHOUSE_PORTAL_AFFILIATE[Portal Affiliate]
+        end
+        subgraph INHOUSE_CM[Case Management]
+            INHOUSE_CM_BACKEND[cm-backend<br/>API]
+        end
+        subgraph INHOUSE_CENTRIFUGO[Centrifugo]
+            INHOUSE_CENTRIFUGO_SERVER[Centrifugo]
+        end
+        subgraph INHOUSE_REL[Relationship]
+            INHOUSE_REL_ACCOUNT[SCEX Account]
+            INHOUSE_REL_API[Portal API]
+            INHOUSE_REL_SERVICE[Rel Service]
+        end
+        subgraph INHOUSE_REC[Reconcile]
+            INHOUSE_REC_API[Reconcile API]
+        end
+        subgraph INHOUSE_PARTNER[Partner]
+            INHOUSE_PARTNER_API[API]
+            INHOUSE_PARTNER_MANAGER_API[Manager API]
+        end
+        subgraph INHOUSE_BANK_GATEWAY[Bank Gateway]
+            INHOUSE_BANK_GATEWAY_STB_INBOUND[STB Inbound]
+            INHOUSE_BANK_GATEWAY_STB_OUTBOUND[STB Outbound]
+            INHOUSE_BANK_GATEWAY_LPB_API[LPBANK API]
+            INHOUSE_BANK_GATEWAY_MBV_INBOUND[MBV Inbound]
+            INHOUSE_BANK_GATEWAY_MBV_OUTBOUND[MBV Outbound]
+        end
+        subgraph INHOUSE_TEMPLATE_ENGINE[Template Engine]
+            INHOUSE_TEMPLATE_ENGINE_MIGRATION[Migration]
+            INHOUSE_TEMPLATE_ENGINE_PORTAL[Portal]
+            INHOUSE_TEMPLATE_ENGINE_CORE[Engine]
+            INHOUSE_TEMPLATE_ENGINE_GOTENBERG[gotenberg]
+        end
+        subgraph INHOUSE_AFFILIATE[Affiliate]
+            INHOUSE_AFFILIATE_API[Portal API]
+            INHOUSE_AFFILIATE_CORE[Core Service]
+            INHOUSE_AFFILIATE_MIGRATION[Migration]
+            INHOUSE_AFFILIATE_WORKER[Worker]
+        end
+        subgraph INHOUSE_CONNECTOR[SCEX Connector]
+            INHOUSE_CONNECTOR_QUERY_SERVICE[Query Service]
+        end
+        subgraph INHOUSE_BASE[Platform Service]
+            INHOUSE_BASE_FILE[File Service]
+            INHOUSE_BASE_NOTI_VOICE_OTP[Notification Voice OTP]
+        end
+        subgraph INHOUSE_INFRA[Infra Service]
+            INHOUSE_INFRA_POSTGRESQL@{shape: db, label: "PostgreSQL<br/>schema case_mgmt"}
+            INHOUSE_INFRA_REDIS@{shape: h-cyl, label: "REDIS"}
+            INHOUSE_INFRA_KAFKA@{shape: bucket, label: "KAFKA"}
+            INHOUSE_INFRA_S3@{shape: disk, label: "S3"}
+        end
+        INHOUSE_KC[Keycloak]
+    end

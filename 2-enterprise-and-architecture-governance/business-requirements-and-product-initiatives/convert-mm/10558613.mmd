@@ -1,0 +1,46 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '14px'}}}%%
+graph TD
+    %% Node definitions
+    id1(Giá thị trường các<br/>mã Crypto tại SCEX)
+    id2(Cấu hình tỷ giá liên<br/>ngân hàng<br/>USD/VND)
+    id5{Cung cấp dữ liệu<br/>Realtime cho Digital}
+    id6((Kết nối MM<br/>với FlowZ))
+    id7[[FlowZ]]
+    id8[Đặt lệnh thỏa thuận]
+    id9{Validate}
+    id10[Đặt lệnh thỏa thuận<br/>vào Core]
+
+    %% Group definition
+    subgraph group1 [ ]
+        direction LR
+        id3[Cấu hình mã tự<br/>doanh]
+        id4[Cấu hình mã<br/>USDT/VND cho MM]
+    end
+
+    %% Connections
+    id1 -.-> group1
+    id2 -.-> group1
+    id3 -.-> id5
+    id4 -.-> id6
+    id7 -.-> id6
+    id5 -.-> id8
+    id8 -.-> id9
+    id9 -. F .-> id5
+    id9 -. T .-> id10
+
+    %% Styles
+    classDef blue_box fill:#cfe2f3,stroke:#666,stroke-width:1px,rx:5,ry:5;
+    classDef yellow_hex fill:#ffe599,stroke:#666,stroke-width:1px;
+    classDef yellow_ellipse fill:#ffe599,stroke:#666,stroke-width:1px;
+    classDef purple_box fill:#d9d2e9,stroke:#666,stroke-width:1px;
+    classDef green_box fill:#d9ead3,stroke:#666,stroke-width:1px,rx:5,ry:5;
+    classDef red_rhombus fill:#f4cccc,stroke:#666,stroke-width:1px;
+
+    %% Apply styles
+    class id1,id2,id3,id4,id8 blue_box;
+    class id5 yellow_hex;
+    class id6 yellow_ellipse;
+    class id7 purple_box;
+    class id10 green_box;
+    class id9 red_rhombus;
+    style group1 fill:none,stroke:#333,stroke-width:1px,stroke-dasharray: 5 5;

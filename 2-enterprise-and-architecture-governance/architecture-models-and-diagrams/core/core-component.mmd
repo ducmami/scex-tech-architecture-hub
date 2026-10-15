@@ -1,0 +1,83 @@
+flowchart LR
+    subgraph SCEX_CORE[SCEX_CORE]
+        subgraph SCEX_CORE_BE[SCEX BE]
+            SCEX_CORE_BE_API[API]
+            SCEX_CORE_BE_ADM[Admin]
+            SCEX_CORE_BE_BKD[Backend]
+            SCEX_CORE_BE_CBS[Callback Server]
+            SCEX_CORE_BE_CON[Consumer]
+            SCEX_CORE_BE_CDLQ[Consumer DLQ]
+            SCEX_CORE_BE_CL[Consumer Ledger]
+            SCEX_CORE_BE_CR[Consumer Rates]
+            SCEX_CORE_BE_HAP[HAProxy]
+            SCEX_CORE_BE_QADM[Queue Admin]
+            SCEX_CORE_BE_QDF[Queue DB Finalizer]
+            SCEX_CORE_BE_QF[Queue Funding]
+            SCEX_CORE_BE_QH[Queue Heavy]
+            SCEX_CORE_BE_QN[Queue Notification]
+            SCEX_CORE_BE_QS[Queue Scheduler]
+            SCEX_CORE_BE_SMS[SMS Sender]
+            SCEX_CORE_BE_WS[WebSocket]
+        end
+        subgraph SCEX_CORE_TE[Trading Engine]
+            SCEX_CORE_TE_COM[Conditional Order Manager]
+            SCEX_CORE_TE_ERES[Exchange Rate Enrichment Service]
+            SCEX_CORE_TE_EML[External Market Listener]
+            SCEX_CORE_TE_FOW[Fan-out Worker]
+            SCEX_CORE_TE_FFO[Fund Flow Orchestrator]
+            SCEX_CORE_TE_LEC[Ledger Entry Coordinator]
+            SCEX_CORE_TE_LPE[Ledger Posting Engine]
+            SCEX_CORE_TE_MDIP[Market Data Internal Projector]
+            SCEX_CORE_TE_MDOP[Market Data Overall Projector]
+            SCEX_CORE_TE_MDQ[Market Data Querier]
+            SCEX_CORE_TE_SS[Supporting Service]
+            SCEX_CORE_TE_TVS[Trade Verification Service]
+            SCEX_CORE_TE_TM[Transaction Monitoring]
+            subgraph SCEX_CORE_TE_ME[Matching Engine]
+                SCEX_CORE_TE_ME_NORMAL[Matching Engine]
+                SCEX_CORE_TE_ME_HOT[Matching Engine HOT 1]
+            end
+        end
+        subgraph SCEX_CORE_BANK_GW[Bank Gateway]
+            SCEX_CORE_BANK_GW[BANK Gateway LPEX API]
+        end
+        subgraph SCEX_CORE_ADMIN_SSO[Admin SSO]
+            SCEX_CORE_ADMIN_SSO_WEB[Web]
+            SCEX_CORE_ADMIN_SSO_RESQUE[Resque]
+            SCEX_CORE_ADMIN_SSO_CLOCKWORK[Clockwork]
+        end
+        subgraph SCEX_CORE_FIAT[FIAT Service]
+            SCEX_CORE_FIAT_ADMIN[Admin]
+            SCEX_CORE_FIAT_BACKEND[Backend]
+            SCEX_CORE_FIAT_CBS[Callback Server]
+            SCEX_CORE_FIAT_QUEUE[Queue]
+            SCEX_CORE_FIAT_WS[Websocket]
+        end
+        subgraph SCEX_CORE_KYC[KYC Service]
+            SCEX_CORE_KYC_API[API]
+            SCEX_CORE_KYC_CLOCKWORK[Clockwork]
+            SCEX_CORE_KYC_EKYC[eKYC]
+            SCEX_CORE_KYC_RESQUE[Resque]
+            SCEX_CORE_KYC_SIDEKIQ[Sidekiq]
+            SCEX_CORE_KYC_WEB[Web]
+        end
+        subgraph SCEX_CORE_VERIFY_PORTAL[Verify Portal]
+            SCEX_CORE_VERIFY_PORTAL_AUTO_APPROVE_BOT[Backend Auto Approve Bot]
+            SCEX_CORE_VERIFY_PORTAL_CLOCKWORK[Backend Clockwork]
+            SCEX_CORE_VERIFY_PORTAL_POSTBACK_WEB[Backend Postback Web]
+            SCEX_CORE_VERIFY_PORTAL_RESQUE[Backend Resque]
+            SCEX_CORE_VERIFY_PORTAL_RESQUE_SCHEDULER[Backend Resque Scheduler]
+            SCEX_CORE_VERIFY_PORTAL_WEB[Backend Web]
+        end
+
+        subgraph SCEX_CORE_INFRA[Infra Service]
+            INHOUSE_INFRA_POSTGRESQL@{shape: db, label: "PostgreSQL"}
+            INHOUSE_INFRA_MONGO@{shape: db, label: "MongoDB"}
+            INHOUSE_INFRA_CLICKHOUSE@{shape: lin-cyl, label: "ClickHouse"}
+            INHOUSE_INFRA_REDIS@{shape: win-pane, label: "Redis (Cache)"}
+            INHOUSE_INFRA_VALKEY_JOB@{shape: delay, label: "Valkey (Queue)"}
+            INHOUSE_INFRA_VALKEY_WS@{shape: bolt, label: "Valkey (Broker)"}
+            INHOUSE_INFRA_KAFKA@{shape: bucket, label: "Kafka"}
+            INHOUSE_INFRA_NATS@{shape: bolt, label: "NATS"}
+        end
+    end

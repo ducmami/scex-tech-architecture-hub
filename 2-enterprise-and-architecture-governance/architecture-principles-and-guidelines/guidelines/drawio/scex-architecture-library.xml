@@ -1,0 +1,472 @@
+<mxlibrary>
+[
+  {
+    "xml": "jVJNb4MwDP01PlYK8T7ugbXaYScOO0dgSrRAkEkL7NdPAa8rh0rLIYqf33tJbAPm3XxiO7QfoSYP+AaYcwhxO3VzTt6DVq4GLEBrBVpD2o8PCNlGGCxTH/+pGbk6uD4S99YfRuKrq2jTXK2/0EZ6FwJoVd5Txrh4oXC49DUlUwVoptZFKgdbpezEdgA0bew8YJEBmsZ5nwcfeNWiUs+KGkAzRg5ftMtkhclvmU9Xxxaw0Mkj9PGO2axL8NJ9p4uzJ0AjnyGOND8s0wpJgU4UOoq8gFYikCIuu2iStyT1i2AtuXMrlq+C2XGLzzfbXUNAH6Unv+HfBKy53YD8AA==",
+    "w": 160,
+    "h": 70,
+    "title": "Internal Service"
+  },
+  {
+    "xml": "jVI7c8MgDP41GnOHoY8du8mUyUNnauTABRufTGKnv75no6T1kLsycOh7SCABquzmA5nBHaPFAOoDVEkxpnzq5hJDACm8BVWBlAKkhGXfPxEUWTAYwj790zNSs/syzRl7u6N46S3abLmacMGs0ZkHKWqkq28wK8Z0C6y4O1VVgNKT8wnrwTQLO5EZQGmXusB060MoY4i0epUQrwJbUHpMFM+4YYpKlw/m09vkQFVyyRH79EfZrovx2n8vhYsXUJrfgpRwftqkFeL2HDB2mOgGUrCBW3jbRBPfZXG/MebQnxynfGfMjDk+PdJuxgFyzxO5h7/zX7nN9/gB",
+    "w": 160,
+    "h": 70,
+    "title": "Backend (rounded)"
+  },
+  {
+    "xml": "jVI7b4MwEP41N0YyvjZRVshj6sTQ2YUjtmowsi8F+usrg5vCEKmL5ftetu8MWLTj1atev7maLOAZsPDO8bJrx4KsBSlMDXgCKQVICXG9PBFki6BXnjr+pyf4akcjk++U3YUpMLWL5UvZOy2ac+JBinKlCDzZpPDu3tUUIwVgPmjDVPaqiuzgVQ+Ya24t4CkDzBtjbeGs87MXm4b2VQWYB/buk1ZMfTh+CPFg3k3NGvAkY4breKWUmXyVx4SX5jsenL0A5ukt5JnGp02aodSeK7mW2E8gRTKkFk6bakh3ie59wjSZm06Rh4SpsNS3R+xmHCAvaSK/5d/8Z27zPX4A",
+    "w": 160,
+    "h": 70,
+    "title": "External System"
+  },
+  {
+    "xml": "1ZTBb4MgFMb/mndsgtC1u067mh2WLOmhZ6rPSoZgkE7dX7+gtNOyJt1hh3kw8L3vAX4/A7Ck6lLD6/JV5yiBPQNLjNZ2HFVdglICJSIHtgFKCVAK7r29YYhGQ80NKntnD6/F4sgttrxfHI0+1WPDB5cnHB2j0NheemFqQ2Oxm+2eaaUws/xwtpPwVIPVnydFXaE1PVDSzRr62awVuS1998prJYpj6Zdce403/pCXZWffD3TrI/g5jsZki2kk03HFhQrSeXp7AUrS0RJEZfRJ5ejWJsDithQWdzXPXLU1vAYWl7aSwDYRsLgQUiZaajP0MkIeCBbA4sYa/Y6TyvoQFZxeKnsfjVMKrezEWQyP13fi020cLYHFIZNbP8I14X+HTWQ6xJbuA1YWO+tJTKDMw1da4RWps3RH8NF57jd1c13zTFgX2tr9In/AZTXjsgy40McQS+S132EBuv2+voba7Hb7Ag==",
+    "w": 160,
+    "h": 70,
+    "title": "API Gateway"
+  },
+  {
+    "xml": "jVLBbsMgDP0aHysleN20K8na00497EyCW9BIiBy6JPv6CcK65lBpQkI8+70nYxuw6uYjq8G8e00O8A2wYu/D+urmipwDUVgNWIMQBQgB8T48IJQrYVBMffinZuR213jWxLvWd4PvozRpvpS70kqSiQCiqLaUMSwuU9hfe03RtACUk7GBToNqY3ZiNQBKEzoHWJeAUqvRJG4EZ+tc5Z3nZITnfTyAcgzsP+kuo6gpi+aW+bA6GMBaRA/fhzumKMVevOb4yX7HKsonQJl/RhxoftizFMrdOpLvKPACosiC3NFlg6ZcS1Q/55ghezHZ8iXH1Ljiy812Mx0QhzygX/i3Dim32ZYf",
+    "w": 160,
+    "h": 70,
+    "title": "Border Component"
+  },
+  {
+    "xml": "jVK9bsMgEH6aGyPZd42brjhNpkqVMnTG4RpQsLEwqe0+fYVNU3uI1AVx3x9wB1BZD0cvW/3mFFugV6DSOxfmXT2UbC1gZhTQHhAzQIS4Hh4I8lnQSs9N+Ken8+dNhdWmlT407Gf5l7Q3nnmBAjB7X7JdGG1ivbs1imNUBiR6bQKfWnmObO9lCyR0qC3QPgcSn8ba0lnnJy+pLe/UE5DogndXXjA7rKgo7syHUUED7TFmuCYslJjjFl8SfjLf8eA8ZqZ3sA88PGzOBKW2HNnVHPwImCVDat24qvp0l+guEqbZXHSKfE6Y7Ob6co9djQHwkCbxW/7NfeJW3+IH",
+    "w": 160,
+    "h": 70,
+    "title": "B2B Partner"
+  },
+  {
+    "xml": "jVI9b8MgEP01N1qyucZRVttNumTK0BmFq0HFxjpInfTXVxiaxkOkLoj3cU/HHYDtcD2wnPTRKbKAr4AtOxfSbbi2ZC2I0ijADoQoQQiI5/6JoUqGSTKN4Z81ns+FlqxmyVRoPxTe9CNxKvuS9kLJ93Y6Js6Hm80cu8uoKAaVgM2sTaDTJM9RnVlOgI0OgwXsKsBGSa8XbwQfxtrWWcdLEFKlNrQFbHxg90kPyq7eoqzvyrtRQQN2Ima4MTw4RSU2Ypf5k/mOXVQvgE1+CnGg69M5LVSe0IHcQIFvIMpckKd4W6E59xKr68xpMr3OkdvMSZ9wf49dbQTEPi/lF/59gUVb/ZAf",
+    "w": 160,
+    "h": 70,
+    "title": "Hardware (HSM / Signer)"
+  },
+  {
+    "xml": "jVLNbsMgDH4aHysleO20a5K12mGnHnZmwS1oJERAm2RPPxG8rjlUGkgI+/sBbADrbjp4Oeh3p8gCvgLW3rmYd91Uk7UgCqMAGxCiACEgrfsHhDITBumpj//UBN9uTC/baK60USbIT0sqi67SXiiz3piRgRBny4B3l15R8ioAq1GbSMdBtgkdvRwAKx07C9iUgNXJWFs76/yixdM2TcAqRO++6A55WcYN+TAqasBGJA/XxzvmbhmcP5rvdHD5BFjxE8hHmh5WZ0lxXQ7kOop+BlGwgGs3r6KR75LUO85pMmfNls+ckyHH55vtqg8g9tyK3/Cv8Qu2+hc/",
+    "w": 160,
+    "h": 70,
+    "title": "Inactive / Disabled"
+  },
+  {
+    "xml": "vZOxbsMgEIZfxXJny8ZKnFaESFEqZeqUoTOBs42KAWGS2H36EuzaiRRlqdQFHf8d3H8fYt10e0tN/aE5yM3aau0266bbgZSR4CTO4ii9E1AcGWpBuQc5akwiVMLhDFKbxhclldUnE0dnKk9A4jhqXS998CuDddCFS5lWCpijx2s6m5ug+NpiD7oBZ/uoC8k+rBfBXe0rCh/XIKral698TFvfYDwQLKaDxzuvrWXJA78NFWqyuzVGCkad0Gpy7o0rDpxk+FILBwdDGZCLR4hr10iCcCmk3GmpLXkpyzJnDLfO6i8YNV4ci2Uxap9hghyXWrkxn6N8mb8F5SC+gaAFnmE8ATyR/FdcgukZ1zucJ0zejPMwRia3BJRWcANp2M7zj3zm+dEQh2sR1p63cD1ZZZhKUSkioXT4Or1/KLkNUiM4l/BHbEXAtpiwLW6ooddn1NLhE6V3P+sH",
+    "w": 160,
+    "h": 70,
+    "title": "App — In Development (Đang phát triển)"
+  },
+  {
+    "xml": "vZNRa4MwFIX/irhnUUtXC2kKpbA+DQZ92HNmrk1YTEK8rrpfvzRaa2H0ZbA8yPWcxHv8LtnU3cExK14NB7XdOGNwu6m7PSgVSU7jLI7SOyGPI8scaPzFY9YmVjGtgSdVi62D5ORMa+Poi6kWaBxHDfbKF1cZHEIXPloaf6xE9nGxs1uTPL60OICpAV0fdcHsw/MsOQq/Y+VrAfIk/PbC16zxDcYDIWI6ZLzL2rgy+SVvzaSe4u6sVbJkKI2ekvvgmgOnGTkLiXC0rAR69giJwFrRnHDWCO8PxRtDBKfpOlqTSiq1N8o4+gRhkQad+YRRW5XFc8FH7T382oJURuPVDysoR/kNNF8OdYi1IDdiD6Yw4f5XprI0N6YvQZtw+jzoWY3s5kC00TBjNrw+wJHPcOTE+LlI7GmREabkSVMFFZILAD9QtQtSLTlX8Edyq0BuOZErZuDy9SNw6XDZ0rsb+AM=",
+    "w": 160,
+    "h": 70,
+    "title": "App — Planned / Future (Sẽ phát triển)"
+  },
+  {
+    "xml": "vZM9b8MgEIb/ikVny8bKV0WIFGXI1ClDZwpnGxUDwqSx++tLsGsn6sdSqQs63oO79x7EtumOjtn6yQhQu60zxu+2TXcApRIpKMpRkt0JGCWWOdD+mxyzNtUAok15zXQFaeXM2aLkjakzUISS1vcqBJ8yOA9dLMmN1sA9e7mm87kFRtcGRzANeNcnXUz2cb1I4etwYhXiGmRVh+PrELM2NBgvRIPZ4PDOaet4+sVtw6SezO6tVZIzL42efAfbWoCgObnU0sPJMg70EvCR2jeKYlJKpQ5GGUcfyg0HzknrnXmFUXvZLBfLfNSeo/+ClEb7MV/gYlk8RuUk34HiBZlR/Ah3oviPqCQ3M6pD1CZKwY0PLEYktwC00XDDaNjO44945vHxEMeymJiAW/qernPClKw0VVB6ch0/vJPaR6mRQij4E7VVpLaYqK1voOHNb9Cy4fdkd1/qAw==",
+    "w": 160,
+    "h": 70,
+    "title": "App — Needs Change (Cần chỉnh sửa)"
+  },
+  {
+    "xml": "jVI9b8MgEP01NzrCkLY7dpOpUqUMnam5GBRsEJDa7q+vMDSph0hlQHfv3j24D2DNMB+9cOrNSjTAXoE13tqYrWFu0BigREtgLVBKgFJI9+EBoc4EJzyO8Z85wXfV5fqJfsSIoXJWVp0do9Aj+pz7JcwVM/ndyoyFuJiCBSVcMoe5T6Xs7mI7ZyUwPikd8eREl1iTFw4YV3EwwNoaGD9rYxprrF/lGCFPBM/AeIjeXnATqVve3CIfWkYFrKVJw47xD/O8noKf9Hd6uN4D46Ug9BHnhy1bodKsI9oBo1+AkpJQGrpsvKn8JWU/F0yh7lWRfCmYCNnvb7Kb4QA9lPn8uvdtWGObZfkB",
+    "w": 160,
+    "h": 70,
+    "title": "Kubernetes Pod / Container"
+  },
+  {
+    "xml": "1ZRNb4MwDIZ/TY5IkPCxXmFrpUnTDj30nIa0ZA0xCumg+/UTkHaEbNN22GFCQth+7Vjvg4JIUfcbTZvqCUouEXlApNAAZvqq+4JLiXAoSkTuEcYhwhgN7/UXgmgSNFRzZX7YwzSo4AX2QQf6xHVw1HBupqZXKs98Uk2J1lykTcxlXBveOxswUIozQ/dXeehvNkrtThsONTf6gnDYOw0XJ+pEaSrbndpcxcWxsiMzm6OtXfI21vEA4bW14XNLWs2CpS3LuKZCeS7txprnlYazKvkwPEIk7yph+LahbKh2mjaI5JWppS2XtK1u2oOQsgAJehxEDsnwIJK3RsOJzyopy5KsvFV21ig8zABlZkoc4QSvbH4r3oYtohiR3Cf03a+xZP5vQQoGPsjH59yjaHhvLJYZLpeEAsUX2K4pl0KcxqvkfkEhusb20CGGhjJhBvey8O8gpQ6k2IOE73xGkc39jhHC648bbqw5F+A7",
+    "w": 160,
+    "h": 70,
+    "title": "Cron Job / Worker"
+  },
+  {
+    "xml": "1ZQxb4MwEIV/zY2RwCZpskKaDFWnDJ0duAQrxkbGNKS/vjKYBgNR26FDF4TfvbNP77MMNCmavWZl/qoyFECfgSZaKdP9FU2CQgAJeAZ0C4QEQAjY7+6BIewMJdMozQ97LvURtUSD1SIVdWVQL85a1WXX985EjZ2xEypzE04Y2lAbbLwhUiUlpoYde3swHa61urH2qAo0+gYkaLyGm7e68szknUICp+XIz3m/ZW9klZvya18vByA7F8V8LJVOFzPRzEgF43IS1su6AhIknWWSnFa1zNCeFACNrzk3eChZaqtXzUqgcW4KAXQbAo1PXIhECaXbXor0RE4Z0LgyWl1wUAnD1fp4r7y5pIjdQ0kzcJKQLMnG6Qf+YQ8Oo37t5rRnT5F9c13G9+C/w+WpegB3hNRgY1xoA3Y+I6kkjoD2ks8nWkWb5XbEp70LIz6qZCk3NsQne5P+DtfKwxVNca1naDntd7CA7O5PYFvzXshP",
+    "w": 200,
+    "h": 120,
+    "title": "Kubernetes Cluster"
+  },
+  {
+    "xml": "3ZQxT8MwEIV/jcdKid0WuqalLCAGBuaLfTQGx46cK0359ciNU2JCJRhYWCL7+Z19et8pTKzr7tZDU907hYaJGybW3jnqV3W3RmMYz7RiYsM4zxjnLHy3Fwx5b2jAo6Uf1iggKKHFmStfUNKsJedhh7Odd/umL34Ds8fe3QstHU0Uxjb0hF3SiXTWoiQoB3s27fBkjb3doquR/JHxrEsKjsnuoBVVsXrQKtS7Kl65ihq0scnztUkWjG9jHN9H03o5uxTPJb0GbSepbaJ5kl5bQROW8mi0VegFE8Wh0oSPDchwcPDQMFFUVBsmNjkTRen2VqG6K88CyNdAwaqHPRltMeqtfj8tF0wUz9qYtTPOn54Vz6CuQAYPefeKo5Nyvlxk8/PJUwyahzucpZGT53zBV1F/jG+Fyinhn4zY19n5NwOhpftmIIrJKBB2FMmNaKeArAt0E5qDlMKZL+erxeYLnHzYU/9o2LsGpKYQ5lX29+yuE3bLCbvBMEaXR+136Bjffv5IT2fJf/YD",
+    "w": 120,
+    "h": 90,
+    "title": "Database / Object Storage"
+  },
+  {
+    "xml": "3ZRBb+IwEIV/jY9IiQ20XAOlF6pqxWHPE3vaWHXs1BmW0F+/MnHYmCwSPexlL5H9/MYevW8UJtZ19+yhqV6cQsPEExNr7xz1q7pbozGMZ1oxsWGcZ4xzFr7bG4a8NzTg0dKdNR4NkHYWzEwBQQktztpPM3v37tD0xb/AHLB390JLJxOFsQ09YZd0Ip21KAnKwZ5NOzxbY2/P6Gokf2I865KCU7I7akVVrB60CvV7Fa9cRQ3a2OTl2iQLxrcxjr9H03o5uxXPLb0GbSep7X/sGM82xSS9toImLOXJaKvQCyaKY6UJ9w3IcHD00DBRVFQbJjY5E0XpDlah2pUXAeRHoGDV64GMthj1Vn+dlwsmijdtzNoZ58/PijdQDyCDh7z7wNFJOV8usvnl5GcMmoc7nKWRk+d8wVdR38e3QuWU8D0jdj07/81AaOluDMTVLBB2FNGNcKeErAt4E5yDlNKZL+erxeaKTj7sqX807F0DUlNI8yH79/AeE3jLCbzBMGaXR+177Bjf/vmTns+SH+1v",
+    "w": 120,
+    "h": 90,
+    "title": "Relational Database (SQL)"
+  },
+  {
+    "xml": "1ZRBb+IwEIV/zRyREhvocgWWXrbiwGHPjjMlLo4dOUMJ/fWVE4fGeHfVHvbQS2S/eWOP3mcF+KbuHp1oqidbogb+E/jGWUvDqu42qDWwTJXAt8BYBoyB/+7+YsgHQyMcGvpkjy1eUNKsJevEEWctnx2dPTdD26vQZxx8g9DSVQdhakNH2EUzSGsMShLFaM/S2XprmOoRbY3krsCyLmq4RruLKqkK3aNWoTpW4chV0EQbhrwdG6UAbBeC+HMorZOzNJhUqYUySVL73gYsO5B1mOTWVqLxS3nVypToOPD1pVKEh0ZIX7g40QBfV1Rr4Nsc+LqwZ1Ni+au4CUKefP6m3J9JK4NBb9Vbv1wAXz8rrTdWW9dfy59F+SCk95CzJ5xUivlykc1vld8hYubPsIYmTpazBVsF/RDu8p0p238/q/v38q0fgZI2fQQHnoAn7ChwmrCNcRjrWUbsRilGMV/OV4vtHYp83IdL/d42QiryAT5k/5PUj4jUMiE1Gqag8qB9DRSw3cdPsq9F/9B3",
+    "w": 120,
+    "h": 90,
+    "title": "Object Storage (S3)"
+  },
+  {
+    "xml": "1VQ9b8MgEP01N0ayIU7jMXY+llYdMnQm+FKjYLAwaZz++gobpyZupVbq0gVx795xx3sIoHnV7gyryyddoAS6AZobrW2/q9ocpQQSiQLoGgiJgBBw6/YbQtwTamZQ2R/WcMZLnL0afa576huTZ+xzPdDYq/TAmIbGYhv05Vop5JYdBno0naej+kl2qCu05gokaoOCaxBdRGFLXz1gJYrX0h+Zeow1fsjbscHNgWz95b8WojF81ovRrxUTaqJI7lITWZqS1W7Lr1KoAg0Fml1KYXFfM+4SF8NqoFlpKwl0HQPNDvqsCiweDzeA8ZOTVxXPZyuFQo834r3bJkCzo5Ay11Kbri09Ho9L7DjW6BOOMwlbEHrLvHgFiTtDKztikpgkJPX43veaA82m1k1fyv0T+Be+Cq6nvsKGQLqCVTzx1mLr5olD+0LFlXZ2BfYMUKj2fDFPk/Wd2vEQ+6Yu1jXjwjq9HqK/NmMZmLGYmDEQxl7EHvudF0C2n99Zlwt+uw8=",
+    "w": 120,
+    "h": 90,
+    "title": "Cache"
+  },
+  {
+    "xml": "1ZTBcoMgEIafhmMyCiZNrpompxwyOfRMcBOZolDAxvTpOyimos1Me+ihHhh299+F+T8HRLKy2Wmqir3MQSDyjEimpbTdrmwyEALhiOeIbBDGEcIYuXX7QBB3AkU1VPaHPSUYQy8we6uhhtlFy1p1Le9U1NBpuoSxN+ETQxloC01wPpNVBczSUy+Ppvdqpf5GO5AlWH1DOGqChlsQXXluC9+99LkC+KXwI/scNf6S97GBAwhvvQnfG2I0m4WmjCLKq4lDB1ea2GQKqty2bC6O8pxxw+S85IbNFXeV9FpwC0dFmZNdNVWIpIUtBSKbGJH0zIXIpJC6nUfO7YdIaqyWrzCoxPFydcrvlRdvFXYzZGUHShzjBV77/JF/uIPjBJF0yujxrzFm/i9BcianIPeHCUULjfU8BmhCBJWsYMSrT4X2J8tkvdiM7I/72B/qYqko49YZ9xT9FZ1VQCeZ0OkFQzixz/0ODsLbr4etrQXv3ic=",
+    "w": 160,
+    "h": 60,
+    "title": "Message Queue"
+  },
+  {
+    "xml": "1ZTBboMwDIafxsdKkLSwXqFrL9uph53T4JZoIUYhXemefgLSjpRW2g47jAPC9m87+j8U4HnVbqyoy1cqUAN/Bp5bIjd8VW2OWgOLVAF8BYxFwBh07/UDQTwIamHRuB/2aBLFbCe0MBLt7GDpWA8tH0IfcdAMicadtU+MZWgdtsF+ScagdGJ3kUfTc/VSf6INUoXOnoFFbdBwDqKTKlzpuxOfK1EdSj8y9TnR+ENexwYOAFt7E+4b0lg5C00Jo0ooM3HohUQBLMq8aGKYpaMpsNsQA89OpXK4rYXsqicrauBZ6Srty3uldU6abN/L9/0DPGucpXccVRKZLtLiWnnzBrFuBhk3UrKYLdjS57fqs1scz4FnUzKPf4hb0v8Sn5J0B182IeawdZ7HCE2IwJDBG16XVGj/PJkvF6sb++NL7Jd2MdVCKtcZl0Z/RScJ6MwndNjTFE7sc7+DA2z9fZ31teC2+wI=",
+    "w": 160,
+    "h": 70,
+    "title": "Load Balancer"
+  },
+  {
+    "xml": "1ZQ/b4MwEMU/zY1IYJOkWSF/lnbK0NmBA6waGxmnIf30lcFJcaBqO2QoA8Lv3tmn90MGmtbdXrOmelE5CqBboKlWygxfdZeiEEBCngPdACEhEAL2vfvGEA2GhmmU5pc9mJcYCMXy4MgEkxnqoNTq1Ax970yccDAOQmsuwgljG2qDnTdEpqTEzLDj1R5Oh+utbqw9qhqNvgAJO6/h4q3OPDeV6146rUJeVm7LldNY64a8bevFAGTnkphPpdVZMJPMjFQzLidZbfMSgYTPySQ0rU4yR3tKBDQ5V9zgoWGZrZ41a4AmlamFKxdciFQJpfteWvQP0KQ1Wr3hqLI6RgUjt8qrC8kqhZJm5CQRWZC10w/8wx4cxUCTKZ0f/ox75P+cI8/UlOMMQIOdcXhGpHwiUkm8w3eVfBrxMl4vNnc0evJ27Q61a9WwjBsb4Sp8KKylByuewCJPU1aR0/7GCsju667ra95V+Ak=",
+    "w": 160,
+    "h": 70,
+    "title": "Edge Load Balancer"
+  },
+  {
+    "xml": "3ZQxb4MwEIV/zY1IYBPSrJAmSztl6GzgEqwaG5lLQ/rrK8BpcEikduhSBoTfvbNP70MGntXd1oqmejUlKuDPwDNrDI1fdZehUsBCWQJfA2MhMAb9e/PAEI2GRljU9MOeUpDIRYuBMqIMcqGELtAGB2uOzdj7IdQRR/MotHRWTpja0BJ23iCF0RoLEvnFHs4HHKxutC2aGsmegYWd13D2VidZUuW6E6dVKA+V23LpNNG6Ib+39aIAtnFp3E+mtUXwIJ0Hci2knmW2ToGFL+ksOmuOusT+rAh4eqok4a4RRV89WdEATyuqlSvvpVKZUcYOvXw/PMDTlqx5x0klzBOMr5U3FxXr9zCaJk4WsQVbOX0nP/uDoxh4Omf0g3/kFv4/ISoLMyd6ByZhRw7VhJpPRxuNNygvkk8mTuLVYn1DJrqsaTy0X5tGFJL6KJfhn4NLPHDxDBx7mnOLnPY7bsA211twqHmX5Bc=",
+    "w": 160,
+    "h": 70,
+    "title": "Database Load Balancer"
+  },
+  {
+    "xml": "zZS9boMwFIWf5o6RwCbQjIWUTJ0yZHbhJlg1NjJOIX36yuCkGFoplToECYTP/bO/IxloVvc7zZrqVZUogL4AzbRSZvyr+wyFABLwEugWCAmAELDf/JeEcExomEZp7qzp2HF10urcjIkfTJxxjIxCay7CCdM01AZ7b2qhpMTCsLdrerDczZDq9rFDVaPRFyBB7xVcvFXHS1O56thpFfJT5VomTmOt2+StrXduILk7+s8YWl2sLAr71ozLBY3Dc74AotVZlmg7hEDTruIG9w0rbLTTrAGaVqYWLnzkQmRKKD3U0uPwAE1bo9U7TiJxkayT8hY5OADE9lDSTDJJSNZk4/Q9/7SDwwhouiQ/t3nu38Obwgt1nykGe+OQT+j7lKWSOLPkKvmEozjarLczwoObdu2G2rVqWMGNpZQE/2tA7BkQLQwgT0v+odP+xh9I/n37DDHvcvoC",
+    "w": 160,
+    "h": 70,
+    "title": "WAF"
+  },
+  {
+    "xml": "1VSxboMwEP0aj5HgTEiyQkumThkyu3AJVo2NjFNIv74CLhSHVGqHDmVAvvfene33JDOeVt3eirp8MQUqxp8ZT60xblxVXYpKMQhkwfgTAwgYAOv/2TeCcBTUwqJ2P+w5SYutUGp1tuZSj+p3oS440iPQuKsiYC5D67Dzts6N1pg78XqTB8sjDVI6zB5Nhc5eGQSd13D1qlYWrqTumLAS5bmkkRvCREOHnMZ6l2eQ0f0fe9HYfDX5MS0qIfXCl4zYhT/WXHSB/cCQ8aQtpcNDLfKeba2oGU9KVymiT1Kp1Chjh15+Gj7Gk8ZZ84YzJo9hC9uJOZIf0M8w2s2UEMIadoQf5Ee/cRgxniyDeBj9fab/KCiZmwdBHRcROewcBTDLwvdcG413Ad0g3+8ojnbrpzu/w1tNm/a1qUUuXW/XJviDOGIvjmgRB2yXaYSE/S4NBtnXIzVw3hv2CQ==",
+    "w": 160,
+    "h": 70,
+    "title": "Firewall"
+  },
+  {
+    "xml": "1ZQ9b4MwEIZ/zY1IxiakWYEkU7tk6OyYC1g1NjJOA/31FcFJ+WirdujQBfneu/Od3gcZWFq1e8vr8tHkqIBtgaXWGDecqjZFpYASmQPLgFIClEL/3X1REA4FNbeo3Q97RK4DzAsMamvaLiisOddDzytXZxyKBqFxnfLCuAytw3aygDBao3D8eCsny8WupX6lPZoKne2AknbS0E2ii8xd6btjr5Uoi9JfufYab/yS92snFgDdeRc+d6SxIpi5MgsrLvXCozR78lMo2eYFLjyz5qxz7IcQYMmllA4PNRd99mJ5DSwpXaWAZSGw5CSVSo0y9trLTieMhQCWNM6aFxxl8vXmSMg98+w9ov0dRrtRJQ3pim68fpBv/eAwApYs4XzzU8xp/1OEUpgvEM6oOWydZzLCM8WgjcYZs5s0RRDF0WaVzRCEt9gP7WNTcyFd7926Z/s3hOIJoWhBiD4sAYVe+x0goLuPd+2amzx77w==",
+    "w": 160,
+    "h": 70,
+    "title": "CDN / Edge Proxy"
+  },
+  {
+    "xml": "jVLLboMwEPyaPSLBOm2aKyTh1KpSqvZshS22ajAyJkC/vjJsKRwi9WJ5Z2bH+zCIrBpyJxv1bAsyIE4gMmetn2/VkJExgLEuQBwBMQZECOf5jiCZBY10VPt/5rTuGt2aOiqlp16Oke/qmsycdZOmo1n2/voCGOeziA0xfluJWz8aFjvb1QWFBxIQaa+0p0sjr4HtnWxApMpXhulCtmrRfmpjMmusm4xEtsvw9AQibb2zX7RikngvDrQwH7rwCsQRg4et/UqJCT7ggfGL/g5VJDsQKfdIztNwd34TxJPLyVbkXWifE3i64ybquZaQ/ciYIl0qttwzJts5LhfbzaYAz7ys3/Dva0zc5uf8AA==",
+    "w": 160,
+    "h": 70,
+    "title": "VPN Gateway / Tunnel"
+  },
+  {
+    "xml": "3ZQxb4MwEIV/zY1IYBMoa2jJ1ClSO7twCVaNjcyRkP76CnBSCInaDl3KgPC7d/bpfcjA06rbWFGXz6ZABfwJeGqNofGr6lJUCpgvC+CPwJgPjEH/zu4YgtFQC4uaftjTYG6RvEposUfrHUSryNtb09Zj50GoFkfrKDR0Uk6Y2tASdrMxcqM15iTeznZ/Od5gdYNt0FRI9gTM72YNp9nqKAsqXXfktBLlvnRbxk4TjRvysu0sCGCZy+JOLjb3bmZzU6yE1Iu8XvrSIjRrWl1gf0oAfH0sJeG2FnlfPVpRA1+XVClX3kmlUqOMHXr5bniArxuy5h0nlSiPV3Fxqby6kFi/h9E0cbKArVji9K386A8OQuDrJZ1v/41r6P+ApMzNkiRkPiQZJCEk/gIoYUcO14TcnJA2Gq9wnqU5nTAKk9XjFZ3gvKbx0H5tapFL6gON/T+GF83ghQt47GHJLnDa79gBy77uv6E2ux4/AQ==",
+    "w": 160,
+    "h": 70,
+    "title": "Secret Manager / Vault"
+  },
+  {
+    "xml": "3ZTBbsIwDIafxsdKabLBrmsZiAPSJA47Z62h0dKkSg20e/qpbWCEgsYOu6yHqPltx9b/RQGRls3CyapY2Rw1iBcQqbOWhr+ySVFr4EzlIGbAOQPOoVvnNxLiIaGSDg3dWaNkGakcDSlqo8rZvcrRRVtnd9VQupd6h0PuINTUai+cp6EjbII5MmsMZiTfj+lsPF+f6idboC2RXAucNUFBG+wOKqfCV0+8VqDaFv7Iqddk7Yc8HRs4AXzuzbhuTO2y6Lo519VSKjNybPm88j05W+avIwOd3Zkcu44xiORQKMJ1JbMuenCyApEUVGof3iitU6ut62sFY48MNyCSmpz9wCASz5L0FHnzhvHuDGvoLHPTf15fq8+ucfwAIhmT+vmiXN6Af4FVZfYG1guUhA15UGfMQjbGGrwAeZTu4BIf9zQ07fa2kpmizskp+2tskwDbwwgbfxpTi732O2rA59/vYB8Lnskv",
+    "w": 160,
+    "h": 70,
+    "title": "IAM / Identity Provider"
+  },
+  {
+    "xml": "1ZTBcoJADIafJkdnIKuoV7B6sZd66HkLUXa6sMwSK/bpO8BqWdGZ9tBDOTAk+ZPs/B+zIJKi2VhZ5c8mIw3iCURijeH+q2gS0howUBmIFSAGgAjte/1AEPaCSloq+Yc9VjJNtCoUk50crDlWfceH1EfqJX2i5rN2iaGMLFPjrU9NWVLK8u0iD8bH6qTuQBsyBbE9AwaN13D2opPKOHfdkcvlpA65Gzl3OVm7Q17HegYArp0H9/2obTrxPPGCQqpy5M+LZAIMtr1m5JY1xzKjdnwIIj7limlXybStnqysQMQ5F9qV90rrxGhju16x7x4Qcc3WvNOgkka4wMW18urcwXaGKXmgxBBnuHT5nfpsF4dTEPEYy8Of4ZbyP0SnUnMH3XaEi6lhB2PAxfe/NCXdwLqkfO+n0XQ5W914H15it7SNTSVTxa1t8+CP0EQemukIDS7GZEKX+x0ZwPX3NdbVvFvuCw==",
+    "w": 160,
+    "h": 70,
+    "title": "Rate Limiter"
+  },
+  {
+    "xml": "3ZQxb4MwEIV/jUcksIE0Y0OaTJUqZejsmGuwamxkLg3pr68MTooDVduhSxkQfvfOPr0PmbCi7raWN9WjKUER9kBYYY3B4avuClCK0FiWhK0JpTGhlLj35gtDMhgabkHjD3sEb1BUPNobjETFlQJ9gOhgzbEZWt+4OsLgHYQWz8oLYxtYhC6YQxitQSDfX+zxdL7e6ifbgqkB7ZnQuAsazsHqJEusfHfutQrkofJbLrzGWz/kddsgCUI3Poz5YForovlw5tWaSz1JrBisk+CsOeoS3EkJYatTJRF2DReuerK8IWxVYa18+UUqVRhlbN/LXvqHsFWL1rzCqJJmGc/Ta+XZB0XdHkbjyEkTmtGl13fy3R2cuM4poe9/kFvy/wKnFGYG5/3TBCVChx7UiFnIRhsNNyAvUsglzdNltr7hklzWOBzq1qbhQqJLchH/NbY8wJZOsNG7KbXEa7+jRujm8/7ra8H1+AE=",
+    "w": 160,
+    "h": 70,
+    "title": "Captcha / Bot Challenge"
+  },
+  {
+    "xml": "1ZSxboMwEIaf5sZIYBMIK0nJlClDZ9c4warxIeM0pE9fGZwUh1Rthw5lsPB/d77T/1kGum76rWFtvcNKKKBPQNcG0Y5/Tb8WSgGJZAV0A4REQAi4tfwiIR4TWmaEtj+saVBLi0bq46IR1kjeLY4GT+1Y98bUSYyJo9DZi/LCNE0YK/pgCI5aC27ZyzU9mg83pPqxtgJd/wuQqA8KLsHuLCtb++rUa7WQx9ofmXmNdX7I27GBDUBK78RjVzrDFw+ceSQxqWde7cbgzDKDJ10J1yMGWpxracW+ZdxFz4a1QIvaNsqHD1KpNSo0Qy09DB/QorMGX8UkkvJsmVW3yLO3iLgzUNtJJonJkuRe38t31zhOgBZzNt/ci3vg/5yi5DinCGUEeQk5hdVqhtKK3npQE2YhG41a3IG8SiGXJE3y5eaOy3AH3N43dXtsGZfWmZlFf4otDbAlM2zEOzKlFnvtd9SAlJ9v3hALnsQP",
+    "w": 160,
+    "h": 70,
+    "title": "Monitoring (Metrics)"
+  },
+  {
+    "xml": "1ZQxb4MwEIV/zY2RwCYQxkJKpk4ZOjtwKVaNjYzTkP76CjAJjlOpHTqUAdn33p3N+ySA5k2/06ytX1SFAugz0FwrZaZV0+coBJCAV0C3QEgAhMDwLr4xhJOhZRql+WFPxbr6oJiuVm9andrJ/sHECSd9KnTmImxhaUNtsHfOLpWUWBp2mO2Bf6fRam+zQ9Wg0RcgQe80XJzdmVemtt2xrdXI32o7MrE11tlLXsc6Xw+ksAE8DqPT5eoWyG3VMC69ZLaz7EWk1UlWOMwMgWbnmhvct6wc1LNmLdCsNo2w8pELkSuh9NhLj+MDNOuMVu+4UOIyWSfVVXm1kZBhhpJm4SQhWZPU1vf8czg4jIBmPovH+O+5/itYvFQ+LCgCSAtIKWyePF4Ge2NpLMC4AKSSeEdrLrnhR3GUrrd34Yfz3h467FXLSm6G6JLgL9jEDpvIY0M2PprQ1n6HBkhx+22NmvNX+wI=",
+    "w": 160,
+    "h": 70,
+    "title": "Dashboard"
+  },
+  {
+    "xml": "1VSxboMwEP2aGyOBTaBZoU2WVh0ydHbhAlaNDxmnIf36CjApDqnUSl3KAPi9d3f2e5KBZ3W3M6KpnqhABfwBeGaI7PhXdxkqBSyQBfB7YCwAxqB/b78RhKOgEQa1/WGNorKUulyVho7NKH4X6ogjOwKtPSsHzGVoLHbe5Jy0xtyK10keLHc0SN1edkg1WnMGFnRewdlbnWRhK1cdO6xCWVauZeIw0bpNXtp6Zwe2dce/bUVr8tVkx/SthdQLVx5HcmGOoaMusO8WAk9PlbS4b0TesycjGuBpZWvl6INUKiNFZqjlh+EBnrbW0BvOmDhP1klxYV6cGazvQdrOlCxka7Zx+F5+9IPDCHi6TOFW7Nd5/puQZE43QnreLQKy2Fln/ywJ33FNGq/imSDf7SiONuv7K7fDae2G9mtqRC5t71YS/H0YsRdGtAiD3S2zCB32uyyAbb9up4HzLq9P",
+    "w": 160,
+    "h": 70,
+    "title": "Logging"
+  },
+  {
+    "xml": "1VTLbtswEPyaPTqQSNtxj5Fd5dIAAXLwmaI2FhGKS1BMLOfrC0qUq4cbtIceehHI2YdGMwMB39ftoxO2eqISNfDvwPeOyPenut2j1sASVQI/AGMJMAbhmf+mIe0brHBo/B/OnLFYCWtXhaNzg251cvRu+6EPod+x7+qBxl90BMZt6Dy2EwaSjEHpRTG0J0tmXWvk9IhUo3cXYEk7GbhMbmdV+ipO7yJWoTpVceWAiSaSvK6daAAsjzLclqRxcjWXZX6vhTILlY5YAEserF3IFTRSUugfokD9TI3yigzwgycLPBuqD1qdAlqQ91QDz5pK2LChbk8hJneFaJS8cyg98OxVab0nTY4BPxgyGAa8ozc8Rp1YQNRn2MAS4JkyZS//ZjzeMeT5Jt/lOfCsFE2FQYkUeKZnfCUajw54JiLVK9B1ZkK+hWSYctgcefVVciW6WaXr7t6XXPmPaG3lDovXQJeMH+Hr7frb5hDxlyh0Otz7b07XwLNl8L5K/DzK/20+laQb+TweF8n02PooXeVrHY9TH6JV48QM0FeuRBfSGy6RFVL5oN59sP0fmbSdmLRemMR2S4/SiP2dR8DyXz/urjb5r/8E",
+    "w": 180,
+    "h": 80,
+    "title": "Web App / Browser"
+  },
+  {
+    "xml": "1VRNb6MwFPw175gK7CSbHOtk6aWVVuphz8a8BqvGzzJuS/rrVwaThbCtutJe9oLMvA8PMyOAH5ruzktXP1CFBvh34AdPFIZT0x3QGGCZroAfgbEMGIP4LD5oyIcGJz3a8MWZhkptcCWdW508vbih/1WaFxwaBqANZ5OAaRv6gN3sckXWogqyHNuzJam+NdG5Q2ow+DOwrJsNnGdvb7oKdZreJaxGfarTyhGTbSJ5WTv7fGBFUuDParRerSaKTI9S24U2D30dWHbr3EKnKI5W0tzLEs0PanXQZIEfAzngYqzeGn2KaEkhUANctLV0cUPTnWI0bkrZanXjUQXg4kkbcyBDngE/WrIYB4KnZ/yZBGIR0e9xA8uAC22rQffNdLxnyItNsSsK4KKSbY1Rghy4MFd8FdqAHriQieoF6DuFVM8xErYaNydeQ5V8hf6q0nf392UX/hNaW7XD8inSJRsm+Hq73m+OCX9MQufj+/DN+Rq4WCbug5Rfx/c/y6RWtMwkFBnsC9hzEPkikwG7kESrQ2PSce5AMmmalRH6zA896H/xY+IPOal0iOJ9i4b/e3u2M3vWC3vYbulOnrC/cwdY8fsP3ddmP/Bf",
+    "w": 180,
+    "h": 80,
+    "title": "Mobile App"
+  },
+  {
+    "xml": "jZI9c8IwDIZ/jUY4Ry6lHZukMPU6MHR2E4F9OLFPNhD49T0nLoWBuy4+fTx6bUkGWXXDmpXXH64lC/IdZMXOxcnqhoqsBRSmBVkDogBESOfqAVBMgFdMffxnTeBm5omD62emj8S9sjPVRMdT4VHZA03kW9uZPmuhqOn46cMEhXi2GQpa+WR2wy41NleXA9P8EIhBlidtIm28ahJxYuVBljp2FmRdgCy3xtrKWcejlBRiIWgLsgyR3Z5uMy9PuPy+Zr5MGzXIGpOG6+MNiQUu8DXHN+aSLi4Sl7sjjjQ8HN4YymNbk+so8hlQ5II82vOdd8pvAcTnHNJkdjorLnNMhcnfXVXvtgS4yov6df++xZi7+zU/",
+    "w": 60,
+    "h": 70,
+    "title": "Person (Internal Actor)"
+  },
+  {
+    "xml": "jVI9c4MwDP01GskFuUnbFfIxdcrQ2Qci5mowJ4sC+fU9g5uGIXddfNJ7T8+WZFB5M55Zd+bDlWRBHUHl7JwsUTPmZC3gti5BHQBxC4gQztMTQboIOs3Uyj9rPBdJR+xdm9AoxK22iS7E8VL4rW1PizLvvbiGIuFlspHwRnchbMZraGajbz3TpvfEoLLB1EKXThdBMbDuQGVGGgvqkILKqtra3FnHs5Wq3mhfVaAyL+y+6IEp0xesdnfmsy7FgDpg8HCtPCgxxR2+R/xS38LFadDFjoiFxqcDm6E4qjO5hoQnwG0siOOcVtkQ3wKI+wgZqq8mOr5GTPslv95dV5sBPMXl/KZ/X2HmVj/lBw==",
+    "w": 60,
+    "h": 70,
+    "title": "Person (External Actor)"
+  },
+  {
+    "xml": "jVLBboMwDP0aH5HA1qrtOGDtqaceJu2WFdNECwSFbEC/fgqYtRwq7RLF7z2/OLaBimY8eNXpo6vYAr0BFd65sNyasWBrAVNTAZWAmAIixHP/QJAtgk55bsM/c3p/Tq6u5aQfTGNVy4nquiXpR9lvXlSvEUs/XMsL1YfJCrXmAZUZUN4H5cPJXGNMKVA+aBP41KlzRAavOqBch8aKvjbWFs46P7sRU411Nft498V3TJbtnj9vzLupggYqMXq4NtwpMcMnfBFcSsl2ayyVx7flm+wDjw87OEPSuwO7hoOfAFNJkP5Om2iQ2gCRVkyzuWixxFRA1S/A5c93MyzAvcxrDW/bMXOb5fkF",
+    "w": 320,
+    "h": 200,
+    "title": "Zone Swimlane (App)"
+  },
+  {
+    "xml": "jVJNb4MwDP01PiKBLfZxBdYepp44TOotK6ZECwSFbHz8+gkwXTlU2iWK33t+cWwDpfVwdKqtTrZgA/QGlDpr/Xqrh5SNAQx1AZQBYgiIMJ+HB4JoFbTKceP/mdO5SzDZhoOu17VRDQdFPa1JP8p886p6f8mD7HQGDM+24ZXu/GiE3nKBsggo6bxyPtfTHFMIlPSV9py36jIjvVMtUFL52oi+1Mak1li3uFFJHJfx4uPsF98xz59RqfDGfOjCV0DZjJS28XdKjDDGV8GllOhpi6Xy+W35KjvPw8MuLpD078i2Zu9GwFASpMfjLuqlNkCkDatYXyuxxFBA1a3A9ea7GxjgQWa2hX8bsnC7BfoF",
+    "w": 320,
+    "h": 200,
+    "title": "Zone Swimlane (DMZ)"
+  },
+  {
+    "xml": "jVJNb4MwDP01PiIFR6u6K/Tj1FMPk3aLwG2ihQSFbEB//QQxrBwq7RLF7z2/OLZBls1wDqrVF1+TBXkEWQbvY7o1Q0nWAgpTgzwAogBEmM7TC0GeBK0K5OI/c7pQZQ/vKOt601jlKKMhUnDKpswfZb8pSY8rIT69o8R3cbTMLw4gDznIoosqxKt5TLEUIItem0jXVlUT0gfVgix0bCzrb8ba0lsfZjd5q6kiNfsE/0VPTLXDPe5X5sPUUYM84OThXXxSYo5v+M44l5Lvlpgrn97mv1KINLzs5QxxF8/kG4phBBScwJ0eN1HPtQGiXDBN5q7ZEgWDqkvAffXdjA3wxJNbwr89mbnNGv0C",
+    "w": 320,
+    "h": 200,
+    "title": "Zone Swimlane (External)"
+  },
+  {
+    "xml": "jVLBboMwDP0aHysFu0PaFVh76qmHSbtlxZRogaCQDejXTxDTlUOlXaL4vecXxzZQ3oxHr7v65Eq2QG9AuXcuxFsz5mwtoDIlUAGIChBhPg9PBEkUdNpzG/6Z0/vL7uZa3vWDaaxueVfqoGPWj7bfHGXFAqoP13Lk+jBZ4dZMoCIByvqgfTib2xyTAsqG2gQ+d/oyI4PXHVBWh8aKvjLW5s46v7gRp9We9eLj3Rc/MOoz5X11Z95NGWqgAmcP14YHJSb4gq+CSylJusZS+fy2/JN94PFpDxdIundk13DwE6CSBOnwtIkGqQ0QacVqNtdaLFEJqPsIXO++m3EBHmRia/i3Hwu3WZ9f",
+    "w": 320,
+    "h": 200,
+    "title": "Zone Swimlane (Data)"
+  },
+  {
+    "xml": "jVLBboMwDP0aH5HAUVvtCqw99dTDpN0icEm0hKCQDejXTwHTwaHScojynp9fHDsgCjtevOzU1dVkQLyDKLxzYTnZsSBjAFNdgygBMQVEiPv5hSBbBJ301IZ/5vS+Sh6upaQftDWypcTKVjZko8Wc+yPNNy3i6yaUfrqWFkUfJsOK1QVEmYHI+yB9uOlHxCIFkQ9KB7p1sorM4GUHIlfBGtbftTGFM87PbuI+r9nHuy/aRI7V6XCqn5EPXQcFosTo4dqwUWKGB3xjnkvJjivmyuPd/FrygcaX/Zwp7uSFnKXgJ8CUE7jb0w4NXBsgipVTpBvFlpgyKfuFaJ6+u9EBnnl6K/z7K3Ns95V+AQ==",
+    "w": 320,
+    "h": 200,
+    "title": "Zone Swimlane (Management)"
+  },
+  {
+    "xml": "jVLBboMwDP0aH5GCI6rtCqw99dRJk3aLwIVoIUEhG9CvnwKmK4dKu0Txe88vjm2QRTedvOrbs6vJgHwDWXjnwnrrpoKMARS6BlkCogBEiOfxiSBdBb3yZMM/cwZfJTdnKRlG3RllKQle1do2a+KPMt+0Kt83XHw6Sys9hNkwveWDLFOQ+RCUDxd9i7EUIPOx1YEuvaoiMnrVg8zb0BnWX7UxhTPOL26SXkhdD4uPd1/0wKTZIavEnfnQdWhBlhg9nA0PSkwxw1fGuZQ0ei4xVx7f5q+SDzQ97eQCcQ9P5DoKfgYUnMB9nnfRyLUBotywlnTTsiUKBtWwAs3ddzc0wCPPbQv/tmThdkv0Cw==",
+    "w": 320,
+    "h": 200,
+    "title": "Zone Swimlane (Trading)"
+  },
+  {
+    "xml": "jVLBboMwDP0aH5GCrU3atXTtLjv1UGm3rJgmWiAoeAP69RNguvZQaZcofu/5xbENVNTDPtnWvceSA9ArUJFilOVWDwWHAGh8CbQFRAOIMJ27B4J8EbQ2cSP/zOnSKbvEhrOu93WwDWcuStbbEFiW3B8bvnkRv0UBNEclzUdseNF0MgbVrD5A2xxo04lNcvCXKSYDtOmdFz609jQhfbIt0MZJHVRf+RCKGGKa3aiq+JN59knxi2+YkrDC6socfSkOaIuTR2zkRok5PuGL4lpK/rzGWvn0tv6Xk/DwsKMzpL3cc6xZ0ghoNEH7Pd5FvdYGiLRijv3ZqSUaBW23AOer793wAHc6vzX825aZu1umXw==",
+    "w": 320,
+    "h": 200,
+    "title": "Zone Swimlane (Hot Wallet)"
+  },
+  {
+    "xml": "jVLBboMwDP0aH5GCo67aFbr2tFMPlXbLiCnRDEEhG9CvnwDTlUOlXaL4vecXxzbovB5OwbTVu7fEoN9A58H7uNzqISdmQOUs6AMgKkCE6Tw+EaSLoDWBmvjPnC4Uyc03lHS9q9k0lBSebdIbZopL8o/hb1rUuWcLqC7Cqg/f0CLq4sgiWp1AH1LQWRdNiGd3m2KtQGd95SKdW1NMSB9MCzqrYs2iLx1z7tmH2U1TWu5Kmn2C/6IHRuF+/2nvzMXZWIE+4OThm/igxBR3+Cq4lJK+rLFUPr0tH6YQaXja0xmSbp7I1xTDCKgkQTo+bqJeagNEvWIVuWsllqgENN0CXO++m/EBHmWCa/i3LzO3Wadf",
+    "w": 320,
+    "h": 200,
+    "title": "Zone Swimlane (Cold Wallet)"
+  },
+  {
+    "xml": "jVLBbsIwDP0aHyul9tjGlRY4DU1C2qTdIvBIRJpUaUaBr5/auowekHaJ4veeXxzbQEV1Xkddm7ewZwe0BCpiCGm4VeeCnQNUdg9UAqICROjO1QNBPghqHdmnf+Y0cZddg+esaW3ltOfsVPvMc2pDPA7JJ+1+eFB/vG8A1WZk1VfwPIiadHEiGp2Ayhxo0SQd09Zeu5gU0KI1NvG21rsOaaOugRYmVU7039a5IrgQezcqngpcvvY+MRz5jsnVC835xnzafTJAJXYewac7JeY4w7ngUkr+PMZSefe2fJhj4vPDnvaQdHPNoeIUL4BKEqTjl0nUSm2ASCNm2B6MWKISUDcDcLj5TsYHuJIJjuHfvvTcZJ1+AQ==",
+    "w": 320,
+    "h": 200,
+    "title": "Zone Swimlane (VPN Network)"
+  },
+  {
+    "xml": "jVLBbsMgDP0aHysloEw9J1urHipN6hew4AQ0EhChTdKvnwB3W6RVGgfk9579ABvgzbAcvXDqbCUa4G/AG29tyNGwNGgMsEJL4K/AWAGMQdwPTxLKnOCExzH8s2by7e5DyB53TuucfBPmilmFqn4/naBKMSumsBpSvL2OEqNJCbyelQ54caKN6uyFA16rMBiSO21MY431qZa3L2zP9sDrKXj7iX8pnR3DL75Li/iLvsdjyuQcMd0qYnoB+oDL06YkitpxRDtg8CuwggqoZesGzVoGlZmKKIW6V+T4SBNTxv2366b7wA40gAf8GXfSNr/hCw==",
+    "w": 50,
+    "h": 20,
+    "title": "Badge [PII]"
+  },
+  {
+    "xml": "jVLRboQgEPyafTRRyLX3rNe79KFJE7+AyiqkKAa4qv36Bthra9JL6gNxZnYG2AV4M64XJ2b1YiUa4E/AG2dtyH/j2qAxwEotgZ+AsRIYg7ie7xRUuWAWDqfwT493XfEm5IDF3OlCep8NH8JcMVfAoX5tnotT28IhYVb6sBlSnb1OEmNYBbxelA7YzqKL6uLEDLxWYTQk99qYxhrrkpd3D+zIjsBrH5x9x7+U3k7hF9+nj/hWf8ZtqpQcMZ0qYroFuoDr3eYkitpyQTticBuwkgzUum2HFi2DyswjUQr1oCjxViZ8xsN36m4KwM40iBv8GXvSdq/iCw==",
+    "w": 70,
+    "h": 20,
+    "title": "Badge [PCI-DSS]"
+  },
+  {
+    "xml": "jVLBbsMgDP0aHysRUPYBYWsPU0897ciCE1BJiAhdkn39BLjbIq3SOCC/9+wH2ICQw3oKajJnr9GBeAEhg/exRMMq0TngzGoQz8A5A84h7ccHCVVJmFTAMf6zZg7t4V3pHg/XrS3JH8rdsKhQN69vEuocczbHzZES/G3UmEwqEM1ibMTLpNqkLkFNIBoTB0dyZ52T3vmQa0VVP9UtA9HMMfgr/qV0foy/+C4v4i/2Mx1TZeeE6VYJ0wswRFwfNiVT1I4T+gFj2IAzKqCWbTu0WB1NYWqiDNrekOM9Tc0F99+uu+4DP9IA7vBn3Fnb/YYv",
+    "w": 50,
+    "h": 20,
+    "title": "Badge [KYC]"
+  },
+  {
+    "xml": "jVLBbsMgDP0aHysloEzaccnWXtpTv4AWJ6A5ISJ0Sfb1E+Bui7RK44D83rMfYAOy6ZeDV6M5OY0E8g1k450LOeqXBolAFFaDfAUhChAC4r5/kFDmhFF5HMI/ayZ/3V2U7nCnesrJH4pumFWo6pfTEaoUi2IKK7Hi3W3QGE1KkPVsbMDzqK5Rnb0aQdYm9MRya4kaR86nWvmkysuzAllPwbt3/Etp3RB+8W1azJ/tZzymTM4R860i5hegD7g8bEqiuB0HdD0Gv4IouIBbtm7QbHUwmamYMmg7w473NDVl3H27broPYs8DuMOfcSdt8xu+AA==",
+    "w": 50,
+    "h": 20,
+    "title": "Badge [AML]"
+  },
+  {
+    "xml": "jVLBbsMgDP0aHysloHTaNdnaXnrKF9DiBDQSIqBL0q+fAHdbpFUaB+T3nv0AG+DNsBydmNTZSjTA34E3ztqQo2Fp0BhghZbA34CxAhiDuB+eJJQ5YRIOx/DPGu+uu4uQPe6UH3LypzA3zCpU9ak9Q5ViVviwGlKcvY0So0kJvJ6VDthO4hrV2YkJeK3CYEjutDGNNdalWv66f+FiD7z2wdkP/Evp7Bh+8V1axLf6Ho8pk3PEdKuI6QXoAi5Pm5IoascR7YDBrcAKKqCWrRs0axlUZiqiFOpekeMjTfiM+2/XTfeBHWgAD/gz7qRtfsMX",
+    "w": 50,
+    "h": 20,
+    "title": "Badge [HSM]"
+  },
+  {
+    "xml": "jVLBbsMgDP0aHysRUDTtmmztqdOkSruz4gQ0EhChTbKvnwB3W6RVGgfk9579ABsQ7bAcgvT66BRaEM8g2uBcLNGwtGgtcGYUiCfgnAHnkPb9nYSqJHgZcIz/rJnCefcuVY+7qx9L8lXaCxYV6ubt9QXqHHM2xdWSEtxlVJhMKhDNrE3Ek5fnpM5BehCNjoMluTPWts66kGtFxR7EI4JophjcB/6ldG6Mv/guL+JP5jMdU2XnhOlWCdMLMERc7jYlU9SOA7oBY1iBMyqglq0bNBsVdWFqojSaXpPjLU1OBfffrpvuA9/TAG7wZ9xZ2/yGLw==",
+    "w": 50,
+    "h": 20,
+    "title": "Badge [VPN]"
+  },
+  {
+    "xml": "jVLNboMwDH4aH5HAEZp6ha097dS9QFoMiRYIMumAPf2U4G5DWqVxiPh+/CWxA6rulxPr0bz6hhyoF1A1ex+2v36pyTnA3DagngExB0SI6/GBodgMo2Yawj9rJr5mF910lAVLnEnEh3Y32gxQVm+WGDAvoEwE5lNYncjsb0NDMawAVc3GBjqP+hrVmfUIqjKhdyK31rnaO8+pVmGBJR5AVVNg/05/Ka0fwi++TZ/wZ/sZtylScsRyqojlGsSBlofNSZS05US+p8ArYC4F0rp1h2bbBLMxT0IZsp2RxLtNTxvuvlN3UwA8yiDu8GfsSdu9ii8=",
+    "w": 70,
+    "h": 20,
+    "title": "Badge [Tier 1]"
+  },
+  {
+    "xml": "jVJBbsMgEHzNHiPZ0LR3u0lOOeUFxKwNKjYW3tR2X18Bm7SWGqk+IM/MzgC7gKz75RTUaM5eowN5AFkH7yn/9UuNzoEorAb5DkIUIATE9fikoMwFowo40D89U2h2V6U73OHQhHUk1NnyqdwNcw3sq8ND3CdGFBOtjvXgb4PGGFiCrGZjCS+jaqI6BzWCrAz1juXWOld750PyyuL6ii8tyGqi4D/wL6X1A/3i2/Qxf7FfcZsyJUfMp4qY74GBcHnaoERxa07oe6SwgijYwO1bN2i2mkxm3pgyaDvDifcyNWXcPVI3kwBx5GHc4c/ok7Z5Gd8=",
+    "w": 70,
+    "h": 20,
+    "title": "Badge [Encrypted]"
+  },
+  {
+    "xml": "jZJNb4MwDIZ/jY+TiL1O7AqMnnbqYecApokWCArpgP76KRC69lBplyh5H3/FNlDezUcnB/VpGzZAH0C5s9Zvt27O2RjARDdABSAmgAjhLJ8YiM1gkI57/0+f0dUvDdd61LbfbH+kufAGix1QubHRLyYyp2xXXUagQgBlk9KeT4OsA52cHIAy5TsTcauNya2xbvUlTtukZaBs9M5+8x0R4i2tmhv50o1XQAWGGLb3d5Yo8IDvUT/pa0gsXoEyx6O+ymqtM+SOv2LneX7ap1WKHTqy7di7BTCJDrGLy8NrirUF711TrM8qhkyjJkOPAPF8C/swEcAyDmV//q3Ayh425Bc=",
+    "w": 120,
+    "h": 80,
+    "title": "Decision"
+  },
+  {
+    "xml": "jVK7bsMwDPwajgFsqjHS1U6TqZOHzopFx0LlSJDY2s7XF7KVh4cAXQTx7ng4UQRR9ePRS9d9WkUGxAeIylvLy60fKzIGMNMKxB4QM0CEeB5eCPJF4KSnC/+zJ/hm0xo7bAJLz4v6V5ofWuj6gQaeTELJGO1CLHIQ5dBpptrJJgKDlw5E2XFvEi2DoybGafVICkTZamMqa6yfzYTa0k69gSgDe/tNT8wOT6Io7syXVtyB2GP0sBd+UmKOW3xPeK2vc7So8xT0VZ7m4DFMeiB5pvHl0GYojetItif2E2CWGtJIp1U1pGyAWCSoI33ukuMNk2Gpz3fX1e8AHtIH3crHOszcalv+AA==",
+    "w": 60,
+    "h": 60,
+    "title": "Flow Start"
+  },
+  {
+    "xml": "jVK7bsMwDPwajgFiEg3S1c5jypShs2rRkVDZEiS1tvP1hWw5jYcAXQTx7ng4UQSq2uHshVMXK9kAHYEqb22cb+1QsTGAWy2BDoC4BURI5+mFoJgFTnju4j97gq83jbH9hjs5a3+E+eaZPC5YiKPJGBujXUhFAVT2Ske+OlEnoPfCAZUqtibTIjiuU5RGDyyBykYbU1lj/WRGjeSaBVAZordf/MTUO9zj/sF8aBkV0IGSh+3ikxILfMP3jF/1fYqGQKXnoO/icwqewuTnsY88vBzYBOVRndm2HP0IuM0NeZzjqupzNkDcZUixvqnsuGAizPXt4br6GcBT/pyl/FuFiVttyi8=",
+    "w": 60,
+    "h": 60,
+    "title": "Flow End"
+  },
+  {
+    "xml": "jZK7bsMwDEW/hmMAh0KbzLabTAW6dVYtJhJKW44kt3a/vtAjLjwE6CKIR7wXfAhE089nJ0f9ahUxiBcQjbM25Fs/N8QMWBkFogXEChAhnqcHCfucMEpHQ/inxrtu5+k20dDRjs2F2AyURV+SJ8pZGfiwcAFeyzFeU7aodegZRLsHUfvg7Ce9GxU0iBZX0li2LonFc3d4OigQtZJekyrCGLzJEMgNINojYHWM1DjqgrGReTtF0/pimO92g00FOPLmR36k8qJZ6YBcoPnhcBIqYzmT7Sm4BbAqgjK6ZRN9l74AV6TJXHVxxKpA6TO4rrabNQCeyibu4d/e09vmW/wC",
+    "w": 20,
+    "h": 200,
+    "title": "Sequence Lifeline"
+  },
+  {
+    "xml": "jVG7boQwEPyaLU8yXkVKbZO7KlWK1A7sna0YTNbmgHx9BHaIKE5KY3lndmZfgLqbL2wG+xpa8oAvgJpDSPnXzZq8BylcC1iDlAKkhPU9P0iocsJgmPr0T03k5hTpa6S+oZNpkrub5EKfZXfjR8p5GYhp8QXgMPYtrS4CUE3WJXobTLOyE5sBUNnUecC6AlRX570OPvCmRSGeBF0BVUwcPunAVLXSO/Pu2mQBawmomKL7Nh9b/dWztEicaH44/waVyS8UOkq8gBRFULazHKKp1AS5Q5bczRbH54KZmOPb7npYNMhz2fVv+HfZjTsc/gc=",
+    "w": 20,
+    "h": 80,
+    "title": "Sequence Activation"
+  },
+  {
+    "xml": "jVLBbsMgDP0aHycFSKfumnTtaacedqbBCWgkRECXpF8/EbyuOVTaBeH3nh/GNoi6n09ejvrDKbQg3kHU3rmYb/1co7XAC6NAHIDzAjiHdB6fCFgWjNLjEP+ZE3zzEqKMmIXf0l4xMyMOygxdxkNcLOHeXQeFKZ2BqKRvzuaWqLIAUU3aRDyPsknI5OUIotKxt6RujbW1s86vVgL3bdEiiCpE777wgWHsdX9Rd+bTqKhBHHjycEN8UHLGd/yNcCqFlSAqj8Hc5GUtO71NH0QfcX7arxWiTp3Q9Rj9ArygBOrmsokmqi1ll4RpNJ0myx1hMuS4u9tuJgP8SMP5Df9WYeU2m/ID",
+    "w": 140,
+    "h": 50,
+    "title": "State"
+  },
+  {
+    "xml": "jVIxbsMwDHwNxwA21Q5d7TSZMmXorNpMJJSOBImt7by+kKW0MFADXQTd8Xg4kQLVDtMxaG9OricG9QqqDc5Jvg1TS8yAle1B7QGxAkRI52FDUGeB14Fu8s+eGLpdFC20szcrVnNu+NL8SVmRiSgzF4KYrY8J1KCa0Vihs9ddIsagPajGyMClrKOnLoW52Il6UM3FMreOXVjMFNb4jC+gmijBfdB25c32YkDtMXm4m/ylTPzZ3pdoSRco2rt+X4KnMOVtFISmzZEtVBnWkdxAEmbAqjSUgc4rNJZsgIhPmTJkr6Y4PjgdM77+uK52A3go63nA38+w1FZ/5Rs=",
+    "w": 24,
+    "h": 24,
+    "title": "State Initial"
+  },
+  {
+    "xml": "jVJLb8MgDP41PlZqjSZt16SP00497EwTp6A5AYG7pP31E4F0q7RK44D4HrY+DKDqfjoE7c27a4lB7UDVwTnJp36qiRlwbVtQW0BcAyKkff/EsMkGrwMN8s+aGJpVFC206uygOdu/NF8o65mIcuVCELP1MYENqGo0VujodZOIMWgPqjLSc5F19NSkKJ2dqAVVdZa5duzC3Ex18wJVRQnuk34puMEXfLsrH7YVA2qLqYcb5C9n5wY52tscLfmi0T6B1l1OTLsldxUo2ps+zRdKIcudKQhNTwc5U2WEB3I9SbgCrktBGfP1AY0lMyDia6YM2bMpHRdOx4zP964PLwa4L4+2wJ8vMmsPP+gb",
+    "w": 28,
+    "h": 28,
+    "title": "State Final"
+  },
+  {
+    "xml": "jVLLboMwEPyaPVIZO6p6LRByqlSph55dvAKrhkVrk8LfV2AIadRIuVje8cx4X6Dydjyx7ps3MuhAHUHlTBTirR1zdA6ksAZUAVIKkBLms7xDSCOh14xdeFDjuUrQ1Jj4qasS3dsoOGs3YGREwIfJrcBM/1hD4tBQTZ12xx3NmIbO4PyDAJU1oXWgihRU5gPTN+bkiBcvlabPL1/m8vJpTWhAFRJUhp15ZaYfUEXltPe2imBp3WYXU5vzuduABVpLPyG1GHgCKRidDvb8V6d9DOsL7yJ9J9sFkGKMjIN4Wjs7RUCKHdpsPA1c4aq8mcKNnxSPGAbNNYb/DEGWV+Xt0DLsLdxXK9KvN+8X",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Sync API"
+  },
+  {
+    "xml": "jZLNbsIwEISfZo+pHBuhXptQOFWq1EPPJl4lVp0sWi+UvH2VOCSUFomL5f08M/5bMGV73rE9NG/kMIB5BVMykaRZey4xBNDKOzAb0FqB1jCM2zuCPAkOlrGTBz2RqwxdjVnsuyqzB5/tvfOMlXjqbEj2kw1HTPoEovRhAoP5YyqJpaF68L0utGA6dg6H/RSYopE2gNnkYIooTF9YUiAes0yer5/3bl759E4aMBsNpsDOvTDTN5hNFWyMvkpw68MSZ1n+ikZ8JUs3GI5999VGNL3XDqlF4R60YgxW/Om3z8ZU1rNutr6T7wS0OieFUepp+o8+Ea1WM7rkRDpyhZP15u9uAlfrRwLFco3yXyDo7dX9FjS2yKVcGjLJr/v1Bw==",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Sync API (Bidirectional)"
+  },
+  {
+    "xml": "jVJBbsMgEHzNHlMRaNJzbcc5VarUQ8/IbDEqZqMFp/HvKxvHSaNGygUxw8wsLAuq7E571of2jQx6UDtQJROlvOtOJXoPUjgDqgIpBUgJ41rfEayz4KAZQ3rQE7lZobG40nEIzarDGLV1wWbfUfseszATMQ1+JkbXxwyJU0uWgva7C1sw9cHgWEiAKtrUeVDVGlQRE9M3luSJpyz1tdFbqZaTT2dSC6qSoAoM5pWZfkBVjdcxuiaTtfPnOKNjO5UZQb7neLm7TZmouR17pA4TDyAFo9fJHf/6dMzQLrrF+k4uJJDilBWbrXia2z1kRornhTrnROq5wdl68zU3gS/ykcCk2WL6LxBkffW+CzVNwBle5i3Lr8fxFw==",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Async Messaging"
+  },
+  {
+    "xml": "jZLNbsIwEISfZo+pHJtWXJsEOFVC6qFnN14SC8dG64XC21eJk0BRkbjE2c8z478FVXbnDelD+xEMOlArUCWFwOmvO5foHEhhDagKpBQgJfTf9QNBngQHTej5SU+kOkPTYLazDjMm7eMOKfvWXLfJe9LuiEmcQOSLG0Hv/BzLQNyGJnjtVldaUDh6g/1iAlTRcudAVTmoIjKFPZbBBRqy1O5Vv0k1z3xZwy2oqifozTtR+AFV1U7HaOsE19ZNcUbHdlhmKraaGcmDqpYgxQKkyIdRFekU/dYfXtuAxgvbYOiQ6QJSEDrN9vTXp2Mqm1k3W7fBegYpzkmxEC/je1wSkPlyRlNMDEeqcXTevd1dnhTPBLKmBvm/QJDrm+Nd0dAiU3ltyCS/7ddf",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — File Transfer / Batch"
+  },
+  {
+    "xml": "jVLBbsMgDP0aHztRyKpdl6TtadKkHXZmwUrQSFwZp2v/fkpIk65apV4Q7/HeMxiDKdrTnu2heSOHAcwWTMFEknbtqcAQQCvvwJSgtQKtYVh3dwTrJDhYxk4e9ESuVuhqXDkrdnVAjj4KdhUm49GGHpMyEVHOYSIG28cEiaWhmjobtgubM/Wdw6GSApM30gYw5RpMHoXpGwsKxGOW+co2zyqbTz69kwZMqcHk2LlXZvoBU1bBxuirRO58uMQ5G5uxzADSPYfL3e3KSE392CO1KHwGrRiDFX/867MxwXrWzdZ38p2AVqekMEo9Tf0+J0avX2bqkhOp5won683f3ARmm0cCxXKN8l8g6N3V+xZqHIELXAYuya/n8Rc=",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Data Persistence"
+  },
+  {
+    "xml": "jVLBboMwDP0aH5lCona7Dig9TZq0w85R4gFawJUTOvj7CUKhq1aplyh+ee/ZsQ0qb4cj61P9RhYdqAOonIlCvLVDjs6BFI0FVYCUAqSE6SzvENJIOGnGLjyo8WwStBUmRpsaE20Meh9FZ+16jKwI+DC6BZgkH0tIHGqqqNPusKEZU99ZnLIIUFkdWgeqSEFlPjB9Y06OePZSXzu9l2p9+WxsqEEVElSGnX1lph9QhXHa+8ZEsGzcxc5qX89ppiDWORV3tyMztPTiiNRi4BGkYHQ6NOe/Ou1jWK28VfpOTRdAiiEydnvxtPR6jIhMX1bo4uOpZ4OL9GYuN4bP8hHDoLnC8J8hyPLqfxs0j/8SbssW6de7+As=",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Cache Access"
+  },
+  {
+    "xml": "jZJBb8MgDIV/jY+dKFSadlyStqdJk3bYmQUrQSO4Mm6X/vspIUm7apV6QfjjvQcYwJRdv2d7aN/IYQCzBVMykeRZ15cYAmjlHZgKtFagNQzj7o5gnQUHyxjlQU/ieoWuwRX2ghxtWPko2LAVTzGbTzYcMaszSHIOExisH1NJLC01FG3YXmjBdIwOh90UmKKVLoCp1mCKJEzfWFIgHrOMe375UmpZ+fROWjCVBlNgdK/M9AOmqoNNydcZ7nyY4/LRhvPcbcaIpjbskToUPoNWjMGKP/312ZTLZtEt1nfyUUCrPis26mnq8jkDbfSC5phER65xct68yE2eVo8EiuUG5b9A0Lur613Q+PBzeflmWX79C38B",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — External Integration"
+  },
+  {
+    "xml": "jZJBb8MgDIV/jY+ZKFTVrmva9DRp0g47s8RL0AiOjNOl/35KSZOuWqVeEP547wEGMHk7HNh2zStV6MHsweRMJGnWDjl6D1q5CswOtFagNYxjcUewSoLOMgZ50BO5zLCqMesjckYdshXizJbiKCTz0foekzqBKCc/gdH6PpXE0lBNwfr9QrdMfahw3E2B2TbSejC7FZhtFKZvzMkTn7PMpnzGz6955cNV0kxaDNULM/2A2ZXexujKBAvnL3HpaON57jbjjKY2HJBaFD6BVozeijv+9dmYynrWzdY3ckFAqyEpjFJPU5tPiWijZ3TJidRziZP15kluAtebRwLFco3yXyDo4up+Czq//KVc/lmSX3/DXw==",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — User / Operator Action"
+  },
+  {
+    "xml": "jVLBTsMwDP0aH4eyZAztSNt1JyQkDpxDY9pqaT057lj/HnXp2jExxCWKn997dhyDSZvTju2heiGHHswWTMpEEm/NKUXvQavagclAawVaw3DmdwjLSDhYxlb+qQlcLNCVuAhYdIwLbAvuD4IuCo/WdxiZkCvY5LBZwUbHZJDej8nB4m0MiaWiklrrtzOaMHWtw6GqApNU0ngw2RJMEoRpjyl54rOXUR9rXH1OmffaSQUm02ASbN0zM32ByQpvQ6iLCOa1v9jF1oZ+7g7lDI3j2CE1KNyDVozeSn38qbMhhuXEm6SvVLcCWp0i43GtHsZx9xHRRk/QxSdQxwWO0puvuTF8mtV/GIrlEuU3Q9D51ftm6LwBl3Det0i/Xsdv",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Secure / Encrypted"
+  },
+  {
+    "xml": "jVLBboMwDP0aH5nSBO0+oO1p0qQddo7AgmghRo7blb+fIEC7apWaQxS/vPfi2AZT9pcj26F7pwY9mD2YkokknfpLid6DVq4BU4HWCrSGaT88IOwSYbCMQZ7URK4zbFrMXBDkYH02eOtC1okMmdRD0p+tP2ESJCDK6BdgUn8uIbF01FKwfn9FC6ZTaHB6UIEpOuk9mGoHpojC9I0leeLZy+Tz2m6+XCMdmEqDKTA0b8z0A6aqvY3R1Qk8OL/apdSmfB7WY4aWShyRehQeQStGb8Wd/+psTGG78TbpB7kgoNUlMXL1shR6TIDOXzdotYl04hoX5V1T7vy0esZQLLco/xmCPtx87wrNvV/D66Ql+u0g/gI=",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Internal Plain (HTTP/TCP)"
+  },
+  {
+    "xml": "jZLNbsMgEISfZo+uCNsf9VjbSU6VKvXQMzUrGwV7rYW4zttXDo6TRk3VC2I/ZgZYACzacSumb17ZkgdcAxbCHNOsHQvyHrRyFrAErRVoDdO4uSFYJUFvhLr4T0+QKiNbU2Zs67rM0sB9yExVUQjJOxi/pyROIMSDn8HkfJ9LlthwzZ3x6zPNhfedpWkzBZg3sfWA5QowD1F4RwV7lmMWfj484bNdVj6cjQ1gqQFz6uyLCH8BlpU3IbgqwY3zp7h0tOk8N3txRHMXtsQtRTmAVkLeRDf89JmQynrRLdY3dl0ErcakQKXu5i4fEtH3jws65QTeS0Wz9epFrgIv3H8ERiM1xd8CQW8u7ndGx4c/ledvluSXv/Ab",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Admin / DevOps Access"
+  },
+  {
+    "xml": "jVLBbsIwDP0aH5lKwop2XFvgNGnSDjtHjdVGS2PkGCh/P7UplKEhcYnyXt57ThyDLrt+x2bffpBFD3oDumQiSbuuL9F7UJmzoCtQKgOlYFi3DwTLJNgbxiBPeiLXC7QNLlrD9mQYFy4INmzEUUjmo/EHTOpERDn7iRisXxMklpYaCsZvZrZgOgSLQ7UMdNFK50FXS9BFFKYfLMkTj1n6LV9rk19Pvp2VFnSlQBcY7DsznUBXtTcxujqRW+cvcdbEdiwzgHTP4XIPOzNSU092SB0Kn0FljN6IO/71mZhgc9VdrZ/kgoDK+qR4zbOXqefnxKjVTF1yIh24xsl69z93gWv1TKAYblD+CwS1vXnfTI1jcIHz0CX57Uz+Ag==",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Hardware Integration"
+  },
+  {
+    "xml": "jVLLboMwEPyaPVIZu4p6LVByqlSph54dvCIoxpuuTQp/X4F5pFFT9WJ5xjNjr3dB5W2/Z30+vpJBC+oFVM5EIe7aPkdrQYrGgCpASgFSwriWdwRpFJw1owv/9HiuEjQ1Jh4/O3QVJn5wVcIj8iG6L9p2GOWR8GGwMzF632foyCGojKlzBsd8ASo7htaCKlJQmQ9MJ8zJEk9mlaa7p4NZTz4aE46gCgkqQ2eemekLVHGwVJ0iVTZ2CYsvGa+/W/xEzWXvkVoMPIAUjFaH5vLTp32E9apbrW/UuABS9FHxKB7mXx0iIXdipZYYTx1XODtvOnCTJzf3H4FBc43ht0CQ5VV5GzU1eoHbWEX59dR9Aw==",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Sequence Sync Request"
+  },
+  {
+    "xml": "jVLLTsMwEPyaPQY5XlRxJQntCQmJA2cTr5oIxxvWTkn+HiVOH1RU6sXyjmfG+wIsu3Enpm9e2ZIDfAEshTmmWzeW5Bxo1VrACrRWoDXM5/YGIU+E3gj5eKcmSJ2R3VMW6HsgX1MmFHr2gZLyYNxAiZqAECe3ArPufQ09ewIshAdvafZWgEUTOwdY5YBFiMJfVLJjWcSY55unT3t6+WhtbAArDViQt88i/ANYcU8+IdvWudXWmtAsf8zGKas5lZtNWKC1/B1xR1Em0ErImdge/upMSOH+xDtJ37j1EbQaEwOVeljbOyVEb87Q0SfwIDWt0qtRXBk+bu4xjEb2FP8zBL29qO8MLRM/huf9SvTL9fsF",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Sequence Response"
+  },
+  {
+    "xml": "jVLBboMwDP0aH5nSWGXnAWtPkybtsHMEHqCFuHVCB38/QSjtqlXqJcp7ee8ldgyYd8NezKF544os4CtgLswh7rohJ2tBq7YCLEBrBVrDtO7uCDZRcDBCLjzo8VImVNWUeDr25EpKjB9dGW0nY3uKukj4MNqFmEwfC3TsCDAT7l1FU7ACzJrQWcBiA5j5IPxNOVuW2YxfW5NqXE8+2yo0gIUGzMhVLyL8A1jwgVxkdq21S2x8yHT73aJnail3T9xRkBG0ErImtKe/PuMjrFfdan3n1gXQaoiKbaqelnaOkdGpWqlzjudeSlqsN62/CXzWjwQGIzWF/wJB767qu1DzD5/hZZ6i/HrcfgE=",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — Sequence Async"
+  },
+  {
+    "xml": "jVLBbsIwDP0aH5lCjLTz2g5OSJN22DmjFkSkMXIMa/9+alNahoZEDlH88t5z7BiwbNqNuNNhyzUFwHfAUpg1n5q2pBDAGl8DVmCtAWuh39cPCMtMODmhqE9qkuwWVO9pkdQpLVRcTF49xyy8uHCmzMxA0i6MQC/7HMPIkQAL4XOsqbc2gMVBmwBYLQGLpMJHKjmwDGJcDWu6+fK1HgArC1hQrN9E+Aew+g68O2Zo7cPVLL+kT/+w7gEaK94QN6TSgTVCwam//NW5lMP9xJukH+yjgjVtZqzMy9jQLgP2dYauNonPsqNRedf8Oz9rnjFUJ3vS/wzBrm/Km6Hhj6/hPFGZfjtwvw==",
+    "w": 160,
+    "h": 70,
+    "title": "Edge — State Transition"
+  }
+]
+</mxlibrary>

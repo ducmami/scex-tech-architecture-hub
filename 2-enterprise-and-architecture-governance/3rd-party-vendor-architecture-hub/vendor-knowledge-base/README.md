@@ -1,0 +1,1 @@
+Tài liệu đối tác, đã làm mịn, chuẩn hóa

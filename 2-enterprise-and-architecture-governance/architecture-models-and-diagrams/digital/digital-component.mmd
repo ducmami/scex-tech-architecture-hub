@@ -1,0 +1,32 @@
+flowchart LR
+    subgraph DIGITAL[DIGITAL]
+        subgraph DIGITAL_PRODUCT[Digital Product]
+            DIGITAL_GATEWAY[Gateway]
+            DIGITAL_INTERNAL_GW[Internal Gateway]
+            DIGITAL_PARTNER_GW[Partner Gateway]
+            DIGITAL_SDK_GW[SDK Gateway]
+
+            DIGITAL_AUTH[Auth Service]
+            DIGITAL_CORE[Core]
+            DIGITAL_AFFILIATE[Affiliate]
+            DIGITAL_SDK_SERVICE[SDK Service]
+            DIGITAL_GAMIFICATION[Gamification]
+            DIGITAL_TRACKING[Tracking]
+            DIGITAL_FEATURE_FLAG[Feature Flag]
+        end
+        subgraph DIGITAL_INFRA[Infra Service]
+            DIGITAL_INFRA_POSTGRESQL@{shape: db, label: "PostgreSQL"}
+            DIGITAL_INFRA_REDIS@{shape: h-cyl, label: "REDIS"}
+            DIGITAL_INFRA_KAFKA@{shape: bucket, label: "KAFKA"}
+            DIGITAL_INFRA_CLICKHOUSE@{shape: cyl, label: "ClicHouse"}
+            DIGITAL_INFRA_EMQX@{shape: bolt, label: "MQTT EMQX"}
+        end
+
+        %% Relation Ship
+        DIGITAL_AFFILIATE --> DIGITAL_INFRA_CLICKHOUSE
+        DIGITAL_AFFILIATE --> DIGITAL_INFRA_POSTGRESQL
+        DIGITAL_AFFILIATE --> DIGITAL_INFRA_EMQX
+        DIGITAL_INFRA_KAFKA --> DIGITAL_AFFILIATE
+    end
+
+    style DIGITAL fill:#ffebbb

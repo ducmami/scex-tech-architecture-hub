@@ -1,0 +1,184 @@
+<mxfile host="Electron">
+  <diagram name="bravo-data-flow" id="h2J262ZIGwijFJPD4G3z">
+    <mxGraphModel dx="975" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#212529;strokeColor=none;fillColor=none;" value="Bravo Data Flow — SCEX Core to DWH to Bravo" vertex="1">
+          <mxGeometry height="30" width="700" x="40" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-note" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=2;fontColor=#666666;strokeColor=none;fillColor=none;" value="Lịch: realtime ingest · dbt 00:00 · sync Sharing 07:00" vertex="1">
+          <mxGeometry height="20" width="500" x="40" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="zone-scex" parent="1" style="swimlane;startSize=30;html=1;fillColor=#1168bd;strokeColor=#1168bd;swimlaneFillColor=#e3f2fd;fontStyle=1;fontSize=14;fontColor=#ffffff;" value="SCEX Core" vertex="1">
+          <mxGeometry height="220" width="240" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="db-scex" parent="zone-scex" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.database;" value="Database&lt;div&gt;SCEX Core&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="78" x="80" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zone-dwh" parent="1" style="swimlane;startSize=30;html=1;fillColor=#0277bd;strokeColor=#0277bd;swimlaneFillColor=#e1f5fe;fontStyle=1;fontSize=14;fontColor=#ffffff;" value="AWS DWH Zone" vertex="1">
+          <mxGeometry height="450" width="780" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="redshift" parent="zone-dwh" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.redshift;" value="Amazon Redshift" vertex="1">
+          <mxGeometry height="78" width="78" x="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dbt" parent="zone-dwh" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=default;fontSize=12;spacingTop=3;image=img/lib/ibm/devops/build_test.svg;" value="dbt" vertex="1">
+          <mxGeometry height="78" width="78" x="520" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="grp-etl" parent="zone-dwh" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_step_functions_workflow;strokeColor=#CD2264;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#CD2264;dashed=0;" value="ETL" vertex="1">
+          <mxGeometry height="160" width="280" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="glue-etl" parent="grp-etl" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.glue;" value="AWS Glue" vertex="1">
+          <mxGeometry height="78" width="78" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="airflow-etl" parent="grp-etl" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#E7157B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.managed_workflows_for_apache_airflow;" value="Airflow&lt;div&gt;DAG ETL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="78" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="grp-sync" parent="zone-dwh" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_step_functions_workflow;strokeColor=#CD2264;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#CD2264;dashed=0;" value="Sync Data" vertex="1">
+          <mxGeometry height="160" width="280" x="440" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="glue-sync" parent="grp-sync" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.glue;" value="AWS Glue" vertex="1">
+          <mxGeometry height="78" width="78" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="airflow-sync" parent="grp-sync" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#E7157B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.managed_workflows_for_apache_airflow;" value="Airflow&lt;div&gt;DAG Sync&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="78" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zone-bravo" parent="1" style="swimlane;startSize=30;html=1;fillColor=#7b1fa2;strokeColor=#7b1fa2;swimlaneFillColor=#f3e5f5;fontStyle=1;fontSize=14;fontColor=#ffffff;" value="Bravo Server (DMZ)" vertex="1">
+          <mxGeometry height="220" width="420" x="320" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="db-sharing" parent="zone-bravo" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.database;" value="Sharing DB&lt;div&gt;trung gian&lt;/div&gt;" vertex="1">
+          <mxGeometry height="78" width="78" x="50" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="db-bravo" parent="zone-bravo" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.database;" value="Bravo DB" vertex="1">
+          <mxGeometry height="78" width="78" x="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="db-scex" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1168bd;strokeWidth=2;endArrow=classic;endFill=1;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="glue-etl" value="1. Extract (realtime)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="airflow-etl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1168bd;strokeWidth=2;endArrow=classic;endFill=1;fontSize=11;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="glue-etl" value="2. Trigger DAG&lt;div&gt;(realtime)&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="glue-etl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1168bd;strokeWidth=2;endArrow=classic;endFill=1;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" target="redshift" value="3. Load (realtime)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="redshift" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1168bd;strokeWidth=2;startArrow=classic;startFill=1;endArrow=classic;endFill=1;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dbt" value="4. Transform — dbt&lt;div&gt;0h mỗi ngày&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="airflow-sync" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1168bd;strokeWidth=2;endArrow=classic;endFill=1;fontSize=11;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="glue-sync" value="5. Trigger DAG&lt;div&gt;(07:00)&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="redshift" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f5a623;strokeWidth=2;dashed=1;dashPattern=8 4 1 4;endArrow=classic;endFill=1;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="glue-sync" value="6. Extract curated&lt;div&gt;(07:00)&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="glue-sync" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f5a623;strokeWidth=2;dashed=1;dashPattern=8 4 1 4;endArrow=classic;endFill=1;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="db-sharing" value="7. Load Sharing DB&lt;div&gt;(07:00)&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="db-sharing" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0b6e4f;strokeWidth=2;endArrow=classic;endFill=1;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="db-bravo" value="8. dblink&amp;nbsp;&lt;div&gt;(Bravo đọc Sharing DB)&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=14;shadow=1;" value="Legend" vertex="1">
+          <mxGeometry height="580" width="300" x="860" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-note" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontStyle=2;strokeColor=none;fillColor=none;fontColor=#666666;" value="Mũi tên = hướng data (DFD)" vertex="1">
+          <mxGeometry height="20.076923076923077" width="270" x="15" y="31.230769230769234" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-sub1" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=12;strokeColor=none;fillColor=none;" value="Components" vertex="1">
+          <mxGeometry height="22.307692307692307" width="270" x="15" y="55.769230769230774" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-db" parent="legend-box" style="rounded=0;html=1;fillColor=#C925D1;strokeColor=#ffffff;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="17.846153846153847" width="30" x="15" y="87.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-db-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="Database (PostgreSQL)" vertex="1">
+          <mxGeometry height="22.307692307692307" width="240" x="55" y="84.76923076923077" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-glue" parent="legend-box" style="rounded=0;html=1;fillColor=#8C4FFF;strokeColor=#ffffff;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="17.846153846153847" width="30" x="15" y="114.88461538461539" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-glue-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="AWS Glue (ETL job)" vertex="1">
+          <mxGeometry height="22.307692307692307" width="240" x="55" y="112.65384615384616" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-airflow" parent="legend-box" style="rounded=0;html=1;fillColor=#E7157B;strokeColor=#ffffff;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="17.846153846153847" width="30" x="15" y="142.76923076923077" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-airflow-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="Airflow / MWAA (DAG)" vertex="1">
+          <mxGeometry height="22.307692307692307" width="240" x="55" y="140.53846153846155" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-rs" parent="legend-box" style="rounded=0;html=1;fillColor=#C925D1;strokeColor=#ffffff;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="17.846153846153847" width="30" x="15" y="170.65384615384616" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-rs-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="Amazon Redshift (DWH)" vertex="1">
+          <mxGeometry height="22.307692307692307" width="240" x="55" y="168.42307692307693" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-dbt" parent="legend-box" style="rounded=1;html=1;fillColor=#dae8fc;strokeColor=#4277BB;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="17.846153846153847" width="30" x="15" y="198.53846153846155" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-dbt-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="dbt (transform 00:00)" vertex="1">
+          <mxGeometry height="22.307692307692307" width="240" x="55" y="196.3076923076923" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-sub2" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=12;strokeColor=none;fillColor=none;" value="Relationships" vertex="1">
+          <mxGeometry height="22.307692307692307" width="270" x="15" y="234.23076923076923" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-edge-trigger" edge="1" parent="legend-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1168bd;strokeWidth=2;endArrow=classic;endFill=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="15" y="278.84615384615387" as="sourcePoint" />
+            <mxPoint x="55" y="278.84615384615387" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg-edge-trigger-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="Realtime / Trigger DAG" vertex="1">
+          <mxGeometry height="22.307692307692307" width="220" x="65" y="267.69230769230774" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-edge-bidir" edge="1" parent="legend-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1168bd;strokeWidth=2;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="15" y="312.3076923076923" as="sourcePoint" />
+            <mxPoint x="55" y="312.3076923076923" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg-edge-bidir-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="Bidirectional (dbt)" vertex="1">
+          <mxGeometry height="22.307692307692307" width="220" x="65" y="301.1538461538462" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-edge-batch" edge="1" parent="legend-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#f5a623;strokeWidth=2;dashed=1;dashPattern=8 4 1 4;endArrow=classic;endFill=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="15" y="345.7692307692308" as="sourcePoint" />
+            <mxPoint x="55" y="345.7692307692308" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg-edge-batch-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="Batch ETL (sync 07:00)" vertex="1">
+          <mxGeometry height="22.307692307692307" width="220" x="65" y="334.6153846153846" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-edge-dblink" edge="1" parent="legend-box" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0b6e4f;strokeWidth=2;endArrow=classic;endFill=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="15" y="379.2307692307692" as="sourcePoint" />
+            <mxPoint x="55" y="379.2307692307692" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg-edge-dblink-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="dblink (secure / encrypted)" vertex="1">
+          <mxGeometry height="22.307692307692307" width="220" x="65" y="368.0769230769231" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-sub3" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=12;strokeColor=none;fillColor=none;" value="Zones" vertex="1">
+          <mxGeometry height="22.307692307692307" width="270" x="15" y="407.1153846153846" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-zone-scex" parent="legend-box" style="rounded=0;html=1;fillColor=#e3f2fd;strokeColor=#1168bd;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="17.846153846153847" width="30" x="15" y="438.34615384615387" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-zone-scex-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="SCEX Core (App)" vertex="1">
+          <mxGeometry height="22.307692307692307" width="240" x="55" y="436.11538461538464" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-zone-dwh" parent="legend-box" style="rounded=0;html=1;fillColor=#e1f5fe;strokeColor=#0277bd;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="17.846153846153847" width="30" x="15" y="466.2307692307692" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-zone-dwh-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="AWS DWH Zone" vertex="1">
+          <mxGeometry height="22.307692307692307" width="240" x="55" y="464.00000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-zone-bravo" parent="legend-box" style="rounded=0;html=1;fillColor=#f3e5f5;strokeColor=#7b1fa2;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="17.846153846153847" width="30" x="15" y="494.11538461538464" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-zone-bravo-t" parent="legend-box" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;strokeColor=none;fillColor=none;" value="Bravo Server (DMZ)" vertex="1">
+          <mxGeometry height="22.307692307692307" width="240" x="55" y="491.8846153846154" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-steps" parent="legend-box" style="text;html=1;align=left;verticalAlign=top;fontSize=10;strokeColor=none;fillColor=none;fontColor=#46495D;" value="1–3 SCEX → Redshift (realtime)&#xa;4 dbt tổng hợp 0h mỗi ngày&#xa;5–7 Sync curated → Sharing DB lúc 07:00&#xa;8 Bravo đọc qua dblink" vertex="1">
+          <mxGeometry height="66.92307692307693" width="270" x="15" y="524.2307692307693" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

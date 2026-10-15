@@ -1,0 +1,1 @@
+Tài liệu thô tiếp nhận từ đối tác

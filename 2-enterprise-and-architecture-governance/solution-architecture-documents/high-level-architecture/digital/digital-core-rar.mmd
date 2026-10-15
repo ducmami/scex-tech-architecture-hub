@@ -1,0 +1,42 @@
+flowchart LR
+  %% Tô màu 3 subgraph: scexZone, border (DMZ), c06Zone
+  style scexZone fill:#e8f5e9,stroke:#43a047,stroke-width:2px,color:#1b5e20
+  style border fill:#fff3cd,stroke:#ffc107,stroke-width:2px,color:#856404
+  style digitalZone fill:#e3f2fd,stroke:#2196f3,stroke-width:2px,color:#0d47a1
+
+  user["User"]
+  scex_app["SCEX App<br>(Web / Mobile)"]
+
+  subgraph digitalZone["Digital"]
+    direction LR
+    digital_gateway["Digital Gateway"]
+    digital_service["Digital Service"]
+    digital_gateway --> | | digital_service
+  end
+
+  subgraph scexZone["SCEX Core"]
+    direction LR
+    subgraph scex_inhouse["Inhouse"]
+      direction LR
+      scex_inhouse_rar_proxy["Rar Proxy"]
+      scex_inhouse_rar_gateway["Gateway"]
+      scex_inhouse_rar_proxy <-->| |scex_inhouse_rar_gateway
+    end
+    scex_backend["Backend"]
+    scex_kyc["KYC Service"]
+    scex_document["Document Verification Service"]
+
+    subgraph border["DMZ"]
+      scex_dmz_rar_agent_gw["Agent Gateway"]
+    end
+    scex_backend <--> | | scex_kyc
+    scex_inhouse_rar_proxy <-->| | scex_dmz_rar_agent_gw
+    scex_kyc <-->|sync| scex_document
+    scex_inhouse -->|Http| scex_kyc
+  end
+  user --> | Đăng ký | scex_app
+  scex_app --> | | digitalZone
+  
+  digitalZone -->|Rest API| scex_inhouse
+  digitalZone --> | | scex_backend
+  scex_inhouse --> | Rest + API Key | digitalZone

@@ -1,0 +1,6 @@
+.env
+
+!.agents/
+.kiro/
+!scripts/
+!.temp/
