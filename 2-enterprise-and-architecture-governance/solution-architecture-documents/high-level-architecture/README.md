@@ -1,0 +1,1 @@
+Tài liệu thiết kế HLD, chia theo domain, team, module

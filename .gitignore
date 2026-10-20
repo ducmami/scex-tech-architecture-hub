@@ -4,3 +4,5 @@
 .kiro/
 .temp/
 scripts/
+
+*.drawio.bkp

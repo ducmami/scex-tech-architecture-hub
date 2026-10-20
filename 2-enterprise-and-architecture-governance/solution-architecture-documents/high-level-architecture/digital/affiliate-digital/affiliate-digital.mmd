@@ -1,0 +1,51 @@
+flowchart LR
+    subgraph DIGITAL[DIGITAL]
+        CUSTOMER@{shape: person, label: "Customer / CTV"}
+
+        subgraph DIGITAL_CLIENT[Client]
+            DIGITAL_CLIENT_MOB[Mobile/Web App]
+        end
+
+        subgraph DIGITAL_GW[Gateway]
+            DIGITAL_GW_GATEWAY[Gateway<br/>dp-scex-gateway-service]
+        end
+
+        subgraph DIGITAL_SL[Service Layer]
+            DIGITAL_SL_AFFILIATE[Affiliate<br/>dp-scex-affiliate-service]
+            DIGITAL_SL_AUTH[Auth Service<br/>dp-scex-auth-service]
+        end
+
+        subgraph DIGITAL_INFRA[Infra Service]
+            DIGITAL_INFRA_POSTGRESQL@{shape: db, label: "PostgreSQL<br/>nghiệp vụ affiliate"}
+            DIGITAL_INFRA_POSTGRESQL_OTP@{shape: db, label: "PostgreSQL<br/>OTP"}
+            DIGITAL_INFRA_REDIS@{shape: h-cyl, label: "REDIS<br/>token cache OTP"}
+            DIGITAL_INFRA_KAFKA@{shape: bucket, label: "KAFKA<br/>internal messages"}
+            DIGITAL_INFRA_KAFKA_OTP@{shape: bucket, label: "KAFKA OTP"}
+            DIGITAL_INFRA_CLICKHOUSE@{shape: cyl, label: "ClickHouse"}
+            DIGITAL_INFRA_EMQX@{shape: bolt, label: "MQTT EMQX"}
+        end
+
+        CUSTOMER -->|Truy cap| DIGITAL_CLIENT_MOB
+        DIGITAL_CLIENT_MOB -->|HTTPS| DIGITAL_GW_GATEWAY
+        DIGITAL_GW_GATEWAY -->|"forward with token<br/>custodyId, userId"| DIGITAL_SL_AFFILIATE
+        DIGITAL_GW_GATEWAY -->|"Internal API / HTTP Basic"| DIGITAL_SL_AUTH
+
+        DIGITAL_SL_AFFILIATE -->|"read/write business data"| DIGITAL_INFRA_POSTGRESQL
+        DIGITAL_SL_AFFILIATE -->|"funnel events"| DIGITAL_INFRA_CLICKHOUSE
+        DIGITAL_INFRA_KAFKA -->|"consume internal_messages"| DIGITAL_SL_AFFILIATE
+        DIGITAL_SL_AFFILIATE -->|"publish realtime"| DIGITAL_INFRA_EMQX
+        DIGITAL_INFRA_EMQX -.->|"Realtime Update In-App"| DIGITAL_CLIENT_MOB
+
+        DIGITAL_SL_AUTH -->|"Publish OTP event"| DIGITAL_INFRA_KAFKA_OTP
+        DIGITAL_SL_AUTH -->|"Cache token OTP"| DIGITAL_INFRA_REDIS
+        DIGITAL_SL_AUTH -->|"Read/Write OTP"| DIGITAL_INFRA_POSTGRESQL_OTP
+    end
+
+    subgraph INHOUSE_AFFILIATE["Inhouse Affiliate"]
+        INHOUSE_AFFILIATE_CORE["core-affiliate-service<br/>core-spot-fee-service"]
+    end
+    subgraph SCEX_CORE["SCEX_CORE"]
+        SCEX_CORE_BE["dax-be<br>Token verification"]
+    end
+    DIGITAL_SL_AFFILIATE -->|"REST fetch/apply"| INHOUSE_AFFILIATE_CORE
+    DIGITAL_SL_AUTH -->|"Verify token / Feign"| SCEX_CORE_BE

@@ -1,18 +1,33 @@
 flowchart LR
     subgraph DIGITAL[DIGITAL]
-        subgraph DIGITAL_PRODUCT[Digital Product]
-            DIGITAL_GATEWAY[Gateway]
-            DIGITAL_INTERNAL_GW[Internal Gateway]
-            DIGITAL_PARTNER_GW[Partner Gateway]
-            DIGITAL_SDK_GW[SDK Gateway]
-
-            DIGITAL_AUTH[Auth Service]
-            DIGITAL_CORE[Core]
-            DIGITAL_AFFILIATE[Affiliate]
-            DIGITAL_SDK_SERVICE[SDK Service]
-            DIGITAL_GAMIFICATION[Gamification]
-            DIGITAL_TRACKING[Tracking]
-            DIGITAL_FEATURE_FLAG[Feature Flag]
+        subgraph DIGITAL_PD[Digital Product]
+            subgraph DIGITAL_PD_GW[Gateway]
+                DIGITAL_PD_GW_GATEWAY[Gateway<br>dp-scex-gateway-service]
+                DIGITAL_PD_GW_INTERNAL_GW[Internal Gateway]
+                DIGITAL_PD_GW_PARTNER_GW[Partner Gateway (BFF)<br>dp-scex-partner-gateway-service]
+                DIGITAL_PD_GW_SDK_GW[SDK Gateway<br>dp-scex-sdk-gateway-service]
+            end
+            subgraph DIGITAL_PD_SL[Service Layer]
+                DIGITAL_PD_SL_AUTH[Auth Service]
+                DIGITAL_PD_SL_FEATURE_FLAG[Feature Flag]
+                DIGITAL_PD_SL_CORE[Core]
+                DIGITAL_PD_SL_SDK_SERVICE[SDK Service]
+                DIGITAL_PD_SL_GAMIFICATION[Gamification]
+                DIGITAL_PD_SL_TRACKING[Tracking]
+                DIGITAL_PD_SL_AFFILIATE[Affiliate]
+                DIGITAL_PD_SL_CMS[CMS]
+            end
+            subgraph DIGITAL_PD_CLIENT[Client]
+                DIGITAL_PD_CLIENT_CMS_WEB[CMS WEB<br>cms.scex.com.vn] 
+                DIGITAL_PD_CLIENT_SCEX_WEB[SCEX Website<br>scex.com.vn] 
+                DIGITAL_PD_CLIENT_SDK[Mobile SDK]
+                DIGITAL_PD_CLIENT_PARTNER[Partner App]
+                DIGITAL_PD_CLIENT_MOB[Mobile/Web]
+            end
+        end
+        subgraph DIGITAL_OBSER[Observability]
+            DIGITAL_OBSER_GRAFANA[Prometheus/Grafana]
+            DIGITAL_OBSER_ELK[ELK Stack]
         end
         subgraph DIGITAL_INFRA[Infra Service]
             DIGITAL_INFRA_POSTGRESQL@{shape: db, label: "PostgreSQL"}
@@ -23,10 +38,12 @@ flowchart LR
         end
 
         %% Relation Ship
-        DIGITAL_AFFILIATE --> DIGITAL_INFRA_CLICKHOUSE
-        DIGITAL_AFFILIATE --> DIGITAL_INFRA_POSTGRESQL
-        DIGITAL_AFFILIATE --> DIGITAL_INFRA_EMQX
-        DIGITAL_INFRA_KAFKA --> DIGITAL_AFFILIATE
+        %% CMS
+        DIGITAL_PD_CLIENT_CMS_WEB --> DIGITAL_PD_SL_CMS
+        DIGITAL_PD_CLIENT_SCEX_WEB --> DIGITAL_PD_GW_GATEWAY -> DIGITAL_PD_SL_CMS
+        DIGITAL_PD_SL_CMS --> DIGITAL_INFRA_POSTGRESQL
+        DIGITAL_PD_SL_CMS -.-> DIGITAL_OBSER_GRAFANA
+        DIGITAL_PD_SL_CMS -.-> DIGITAL_OBSER_ELK
     end
 
     style DIGITAL fill:#ffebbb

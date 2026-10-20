@@ -1,0 +1,42 @@
+flowchart LR
+    subgraph INHOUSE[INHOUSE]
+        OPS@{shape: person, label: "OPS"}
+        INHOUSE_KC[Keycloak]
+
+        subgraph INHOUSE_PORTAL["PORTAL (BFF)"]
+            INHOUSE_PORTAL_REC[Portal Reconcile]
+        end
+
+        subgraph INHOUSE_REC[Reconcile]
+            INHOUSE_REC_API[Reconcile API]
+            INHOUSE_REC_MIGRATION[Reconcile Migration]
+        end
+
+        subgraph INHOUSE_INFRA[Infra Service]
+            INHOUSE_INFRA_POSTGRESQL@{shape: db, label: "PostgreSQL<br/>schema scex_reconcile"}
+            INHOUSE_INFRA_REDIS@{shape: h-cyl, label: "REDIS"}
+        end
+
+        OPS -->|Truy cap| INHOUSE_PORTAL_REC
+        INHOUSE_PORTAL_REC -->|OIDC| INHOUSE_KC
+        INHOUSE_PORTAL_REC -->|API| INHOUSE_REC_API
+        INHOUSE_REC_API -->|Validate JWT| INHOUSE_KC
+        INHOUSE_REC_API --> INHOUSE_INFRA_POSTGRESQL
+        INHOUSE_REC_API --> INHOUSE_INFRA_REDIS
+        INHOUSE_REC_MIGRATION --> INHOUSE_INFRA_POSTGRESQL
+        INHOUSE_REC_MIGRATION -->|Sync role| INHOUSE_KC
+    end
+
+    subgraph DATA[DATA]
+        DWH[DWH]
+        CORE[Core SCEX CDC]
+        BANK[STB SFTP va LPB]
+        REMI[remi]
+        SP[SharePoint]
+    end
+
+    INHOUSE_REC_API -->|8 API| DWH
+    CORE --> DWH
+    BANK --> DWH
+    REMI --> DWH
+    DWH -->|CSV va Excel| SP
