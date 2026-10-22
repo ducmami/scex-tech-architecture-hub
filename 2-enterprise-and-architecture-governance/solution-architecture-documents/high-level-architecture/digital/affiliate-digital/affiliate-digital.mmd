@@ -1,10 +1,14 @@
 flowchart LR
-    subgraph DIGITAL[DIGITAL]
-        CUSTOMER@{shape: person, label: "Customer / CTV"}
+    
+    CUSTOMER["fa:fa-user Customer"]
+    subgraph CLIENT[<i class='fa fa-user'></i> Client]
+        CLIENT_WEB@{label: "fa:fa-globe Web"}
+        CLIENT_MOBILE@{label: "fa:fa-mobile Mobile"}
+        CLIENT_SDK@{label: "fa:fa-puzzle-piece SDK"}
+    end
+    CUSTOMER -->|Truy cap| CLIENT_MOBILE
 
-        subgraph DIGITAL_CLIENT[Client]
-            DIGITAL_CLIENT_MOB[Mobile/Web App]
-        end
+    subgraph DIGITAL[DIGITAL]
 
         subgraph DIGITAL_GW[Gateway]
             DIGITAL_GW_GATEWAY[Gateway<br/>dp-scex-gateway-service]
@@ -25,8 +29,7 @@ flowchart LR
             DIGITAL_INFRA_EMQX@{shape: bolt, label: "MQTT EMQX"}
         end
 
-        CUSTOMER -->|Truy cap| DIGITAL_CLIENT_MOB
-        DIGITAL_CLIENT_MOB -->|HTTPS| DIGITAL_GW_GATEWAY
+        CLIENT_MOBILE -->|HTTPS| DIGITAL_GW_GATEWAY
         DIGITAL_GW_GATEWAY -->|"forward with token<br/>custodyId, userId"| DIGITAL_SL_AFFILIATE
         DIGITAL_GW_GATEWAY -->|"Internal API / HTTP Basic"| DIGITAL_SL_AUTH
 
@@ -34,7 +37,7 @@ flowchart LR
         DIGITAL_SL_AFFILIATE -->|"funnel events"| DIGITAL_INFRA_CLICKHOUSE
         DIGITAL_INFRA_KAFKA -->|"consume internal_messages"| DIGITAL_SL_AFFILIATE
         DIGITAL_SL_AFFILIATE -->|"publish realtime"| DIGITAL_INFRA_EMQX
-        DIGITAL_INFRA_EMQX -.->|"Realtime Update In-App"| DIGITAL_CLIENT_MOB
+        DIGITAL_INFRA_EMQX -.->|"Realtime Update In-App"| CLIENT_MOBILE
 
         DIGITAL_SL_AUTH -->|"Publish OTP event"| DIGITAL_INFRA_KAFKA_OTP
         DIGITAL_SL_AUTH -->|"Cache token OTP"| DIGITAL_INFRA_REDIS

@@ -1,10 +1,15 @@
 flowchart LR
+    subgraph CLIENT[<i class='fa fa-user'></i> Client]
+        CLIENT_CUSTOMER@{label: "fa:fa-user Customer / CTV"}
+        CLIENT_MOBILE@{label: "fa:fa-mobile Mobile"}
+        CLIENT_SDK@{label: "fa:fa-puzzle-piece SDK"}
+    end
     subgraph DIGITAL[DIGITAL]
         subgraph DIGITAL_PD[Digital Product]
             subgraph DIGITAL_PD_GW[Gateway]
                 DIGITAL_PD_GW_GATEWAY[Gateway<br>dp-scex-gateway-service]
-                DIGITAL_PD_GW_INTERNAL_GW[Internal Gateway]
-                DIGITAL_PD_GW_PARTNER_GW[Partner Gateway (BFF)<br>dp-scex-partner-gateway-service]
+                DIGITAL_PD_GW_INTERNAL_GW[Internal Gateway<br>dp-internal-gateway-service]
+                DIGITAL_PD_GW_PARTNER_GW["Partner Gateway (BFF)<br>dp-scex-partner-gateway-service"]
                 DIGITAL_PD_GW_SDK_GW[SDK Gateway<br>dp-scex-sdk-gateway-service]
             end
             subgraph DIGITAL_PD_SL[Service Layer]
@@ -40,7 +45,7 @@ flowchart LR
         %% Relation Ship
         %% CMS
         DIGITAL_PD_CLIENT_CMS_WEB --> DIGITAL_PD_SL_CMS
-        DIGITAL_PD_CLIENT_SCEX_WEB --> DIGITAL_PD_GW_GATEWAY -> DIGITAL_PD_SL_CMS
+        DIGITAL_PD_CLIENT_SCEX_WEB --> DIGITAL_PD_GW_GATEWAY --> DIGITAL_PD_SL_CMS
         DIGITAL_PD_SL_CMS --> DIGITAL_INFRA_POSTGRESQL
         DIGITAL_PD_SL_CMS -.-> DIGITAL_OBSER_GRAFANA
         DIGITAL_PD_SL_CMS -.-> DIGITAL_OBSER_ELK
